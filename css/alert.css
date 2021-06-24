@@ -1,0 +1,108 @@
+:root {
+  --nomad1: #f4f4f4 !important;
+  --nomad2: #f0a500 !important;
+  --nomad3: #cf7500 !important;
+  --nomad4: #424642 !important;
+  --nomad5: #123132 !important;
+  --black25: rgba(0, 0, 0, 0.25) !important;
+  --black50: rgba(0, 0, 0, 0.5) !important;
+  --black75: rgba(0, 0, 0, 0.75) !important;
+  --withe25: rgba(255, 255, 255, 0.25) !important;
+  --withe50: rgba(255, 255, 255, 0.5) !important;
+  --withe75: rgba(255, 255, 255, 0.75) !important;
+  --withe95: rgba(255, 255, 255, 0.95) !important;
+  --shadow1: 0 0 5px var(--black25) !important;
+  --shadow2: 0 0 10px var(--black50) !important;
+  --shadow3: 0 0 15px var(--black75) !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+  outline: none !important;
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+.alert_body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 99999;
+  backdrop-filter: blur(1px);
+}
+
+.alert_popout {
+  width: 500px;
+  height: 350px;
+  background: var(--withe95);
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url(../images/member_banner.jpg) center center no-repeat; */
+  box-shadow: var(--shadow2);
+  /* animation-name: alert;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; */
+  position: absolute;
+  opacity: 0;
+}
+.alert_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.alert_icon {
+  font-size: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nomad2);
+}
+
+.alert_btn {
+  width: 150px;
+  height: 50px;
+  background: var(--nomad2);
+  font-size: 19px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error {
+  color: #cd071e;
+}
+.error_icon {
+  color: #cd071e;
+}
+@keyframes alert {
+  0% {
+    transform: translateY(-700px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.alert_show {
+  opacity: 1;
+  transition: 0.5s;
+}
+@media (max-width: 375px) {
+  .alert_popout {
+    width: 350px;
+  }
+}

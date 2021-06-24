@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #cf7500;
+  --third-color: #424642;
+  --fourth-color: #123132;
+  --fifth-color: #9a9a9a;
+  --sixth-color: #1f1f1f;
+  --seventh-color: #ff91005d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background: rgb(179, 179, 179);
+}
+
+ul.trophy img:hover {
+  background: rgba(255, 217, 0, 0.466);
+  box-shadow: 3px 3px 25px gold;
+  border-radius: 50%;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.side-navbar img {
+  vertical-align: 0;
+}
+
+div.navbartop div.textbox {
+  color: white;
+  margin: 1rem 0;
+}
+div.navbartop div.textbox span1 {
+  display: none;
+}
+
+div.navbartop div.textbox h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--third-color);
+}
+
+div.navbartop div.textbox div.trophy {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+div.navbartop div.textbox span.rank {
+  font-weight: 500;
+  color: black;
+}
+
+div.navbartop div.textbox div.trophy img {
+  width: 100%;
+  height: 100%;
+}
+
+div.navbartop div.navbox {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+div.navbartop div.member {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+div.navbartop div.member img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: 0;
+}
+
+div.box {
+  padding: 0 1.5rem;
+  margin-top: 2.5rem;
+}
+
+div.box div.cardinfobox {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-top: 1.5px solid rgb(214, 214, 214);
+}
+
+div.box div.cardinfobox div.imgbox {
+  flex: 0 1 36%;
+  height: 82px;
+}
+
+div.box div.cardinfobox div.imgbox img {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.box div.cardinfobox div.boxinfo {
+  display: inline-block;
+  flex: 0 1 60%;
+}
+
+div.box div.cardinfobox div.boxinfo p,
+div.box div.cardinfobox div.boxinfo span {
+  letter-spacing: 1px;
+}
+
+div.box div.cardinfobox div.boxinfo h4.title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+div.box div.cardinfobox div.boxinfo p.text {
+  font-size: 0.8rem;
+  color: var(--third-color);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+div.box div.cardinfobox div.boxinfo svg.icon-star {
+  fill: var(--primary-color);
+  width: 1rem;
+  height: 1rem;
+}
+
+div.box div.cardinfobox div.boxinfo span.num {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: black;
+}
+
+div.box div.cardinfobox div.boxinfo span.text {
+  font-size: 0.8rem;
+  color: var(--third-color);
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+div.box div.cardinfobox div.boxinfo p.departure_date {
+  font-size: 0.8rem;
+  color: var(--third-color);
+  font-weight: 400;
+}
+
+div.box div.cardinfobox div.boxinfo p.percentage {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-align: right;
+  margin-bottom: 0;
+}
+
+div.box div.cardinfobox div.boxinfo div.bars {
+  position: relative;
+}
+
+div.box div.cardinfobox div.boxinfo div.progressBar-up {
+  position: absolute;
+  height: 3px;
+  background-color: #cf7500;
+  border-radius: 1rem;
+  z-index: 1;
+  width: 100%;
+  animation: load 2.5s normal forwards;
+}
+
+div.box div.cardinfobox div.boxinfo div.progressBar-down {
+  position: absolute;
+  height: 3px;
+  background-color: #f0a40081;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+div.box div.cardinfobox div.boxinfo ul.trophy-box {
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+div.box div.cardinfobox div.boxinfo ul.trophy-box li {
+  margin-right: 0.5rem;
+}
+
+div.box div.cardinfobox div.boxinfo ul.trophy-box img {
+  width: 100%;
+  height: 100%;
+}
+
+div.box div.cardinfobox div.boxinfo ul.trophy-box div.img {
+  display: inline-block;
+  width: 27px;
+  height: 33px;
+  vertical-align: bottom;
+}
+
+section.footer-section {
+  margin-top: 5rem;
+}
+
+div.parentBox {
+  padding: 0 1.5rem;
+}
+
+.successbox.col-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.successbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1.5px solid rgb(214, 214, 214);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  width: 327px;
+  height: 155px;
+}
+
+.success-img-box {
+  flex: 0 1 118px;
+  width: 118px;
+  height: 118px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308);
+  border-radius: 5%;
+  margin-right: 0.8rem;
+}
+
+.success-img-box img {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.success-description {
+  flex: 0 1 50%;
+}
+
+div.success-image {
+  width: 50px;
+  height: 58px;
+  margin-right: 0.2rem;
+}
+
+div.success-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.success-flex {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.success-flex span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.successbox p.text {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.successbox div.success-flex p.text {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  margin-left: 0;
+}
+
+.successbox p.title {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+
+.success-info p1 {
+  font-size: 16px;
+  margin-left: 30px;
+  color: gray;
+}
+.timeline {
+  margin-left: 170px;
+}
+.timeline span {
+  font-size: 24px;
+  margin-left: 120px;
+  color: #cf7500;
+}
+
+div.box div.trophy {
+  width: 300px;
+  height: auto;
+  padding: 25px 0px;
+  /* border-top: 3px solid #CF7500; */
+  margin-left: 50px;
+}
+.trophy img {
+  width: auto;
+  height: 50px;
+}
+.page {
+  margin-top: 30px;
+  fill: gray;
+}
+
+@media screen and (min-width: 500px) {
+  ul.trophy-box img:hover {
+    background: rgba(255, 217, 0, 0.466);
+    box-shadow: 3px 3px 25px gold;
+    border-radius: 50%;
+  }
+
+  div.navbartop div.textbox span.rank {
+    color: white;
+  }
+
+  div.module-navbar div.dropDown-box ul {
+    margin-top: 1rem;
+  }
+
+  div.module-navbar div.dropDown-box ul p {
+    margin-bottom: 0.5rem;
+  }
+  div.navbartop .navbartop-image {
+    background: url(../images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+    background-size: cover;
+    background-position: right 28%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    height: 194px;
+    margin-top: -86px;
+    box-shadow: 0 1px 6px 5px rgba(0, 0, 0, 0.13);
+  }
+
+  div.navbartop .trophy-text2 {
+    display: none;
+  }
+  div.navbartop .navbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 23rem;
+    height: 194px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+
+  div.navbartop div.member {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 0 2rem;
+    vertical-align: bottom;
+  }
+
+  div.navbartop div.member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    vertical-align: 0;
+  }
+
+  div.navbartop div.textbox {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+  }
+
+  div.navbartop div.textbox h1.title {
+    color: white;
+    font-size: 2rem;
+  }
+
+  div.navbartop div.textbox div.trophy {
+    width: 40px;
+    height: 40px;
+  }
+
+  div.navbartop div.textbox span {
+    color: white;
+    font-size: 24px;
+  }
+
+  div.navbartop div.textbox span1 {
+    display: inline-block;
+    color: white;
+    margin-left: 2rem;
+  }
+
+  div.box {
+    max-width: 1140px;
+    margin: 2.5rem auto;
+  }
+
+  div.box h1.title {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid rgb(214, 214, 214);
+    padding-bottom: 1rem;
+  }
+
+  div.box div.cardinfobox {
+    border-top: 0;
+    margin-top: 2rem;
+  }
+
+  div.box div.cardinfobox div.imgbox {
+    flex: 0 1 35%;
+    height: 252px;
+  }
+
+  div.box div.cardinfobox div.imgbox img {
+    border-radius: 0.5rem;
+  }
+
+  div.box div.cardinfobox div.boxinfo {
+    flex: 0 1 55%;
+  }
+
+  div.box div.cardinfobox div.boxinfo h4.title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  div.box div.cardinfobox div.boxinfo svg.icon-star {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.box div.cardinfobox div.boxinfo span.num,
+  div.box div.cardinfobox div.boxinfo span.text {
+    font-size: 1rem;
+    color: #989898;
+  }
+
+  div.box div.cardinfobox div.boxinfo p.text {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #989898;
+  }
+
+  div.box div.cardinfobox div.boxinfo p.departure_date {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #989898;
+  }
+
+  div.box div.cardinfobox div.boxinfo p.percentage {
+    font-size: 2rem;
+  }
+
+  div.box div.cardinfobox div.boxinfo ul.trophy-box div.img {
+    width: 56px;
+    height: 64px;
+  }
+
+  div.box div.cardinfobox div.boxinfo ul.trophy-box li {
+    margin-right: 1rem;
+  }
+
+  div.parentBox {
+    margin: 5rem auto;
+    max-width: 1140px;
+  }
+
+  div.parentBox .col-xl-4 {
+    flex: 0 0 30%;
+  }
+
+  .successbox {
+    transition: 0.5s cubic-bezier(0, 1.11, 0.88, 0.89);
+  }
+
+  .successbox:hover {
+    transform: perspective(600px) rotateX(10deg) translateZ(10px) scale(1.01);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.205);
+  }
+
+  div.success-img-box {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 255, 255, 0.349));
+  }
+
+  div.success-img-box::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: -100px;
+    width: 170%;
+    height: 130%;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.15)
+    );
+    filter: blur(3px);
+    transform: rotate(35deg);
+    transition: 0.5s cubic-bezier(0, 1.11, 0.88, 0.89);
+  }
+
+  div.successbox:hover > div.success-img-box::before {
+    top: -90px;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.25)
+    );
+    transform: rotate(25deg);
+    filter: blur(2px);
+  }
+}

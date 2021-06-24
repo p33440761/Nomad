@@ -1,0 +1,918 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/* 色票設定 */
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #cf7500;
+  --third-color: #424642;
+  --fourth-color: #123132;
+  --fifth-color: #9a9a9a;
+  --sixth-color: #1f1f1f;
+  --seventh-color: #ff91005d;
+}
+
+body {
+  background: url(../images/hero-image.jpg) center center fixed no-repeat;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.n_1 {
+  display: none;
+  position: absolute;
+  transform: translate(604px, 150px);
+}
+
+.n_2 {
+  display: none;
+  position: absolute;
+  transform: translate(642px, 172px);
+}
+
+.n_3 {
+  display: none;
+  position: absolute;
+  transform: translate(590px, 202px);
+}
+
+.n_4 {
+  display: none;
+  position: absolute;
+  transform: translate(619px, 224px);
+}
+.n_5 {
+  position: absolute;
+  display: none;
+  transform: translate(745px, 202px);
+}
+.n_6 {
+  position: absolute;
+  display: none;
+  transform: translate(549px, 183px);
+}
+
+.north img {
+  width: 15px;
+}
+.e_1 {
+  position: absolute;
+  display: none;
+  transform: translate(749px, 262px);
+}
+.e_2 {
+  display: none;
+  position: absolute;
+  transform: translate(740px, 287px);
+}
+.e_3 {
+  display: none;
+  position: absolute;
+  transform: translate(738px, 317px);
+}
+.e_4 {
+  display: none;
+  position: absolute;
+  transform: translate(727px, 346px);
+}
+.e_5 {
+  display: none;
+  position: absolute;
+  transform: translate(726px, 375px);
+}
+.e_6 {
+  display: none;
+  position: absolute;
+  transform: translate(717px, 402px);
+}
+.e_7 {
+  display: none;
+  position: absolute;
+  transform: translate(692px, 425px);
+}
+.e_8 {
+  display: none;
+  position: absolute;
+  transform: translate(681px, 452px);
+}
+.e_9 {
+  display: none;
+  position: absolute;
+  transform: translate(651px, 510px);
+}
+.e_10 {
+  display: none;
+  position: absolute;
+  transform: translate(657px, 541px);
+}
+.s_8 {
+  display: none;
+  position: absolute;
+  transform: translate(572px, 610px);
+}
+.m_1 {
+  display: none;
+  position: absolute;
+  transform: translate(705px, 235px);
+}
+.m_2 {
+  display: none;
+  position: absolute;
+  transform: translate(697px, 254px);
+}
+.m_3 {
+  display: none;
+  position: absolute;
+  transform: translate(527px, 238px);
+}
+.m_4 {
+  display: none;
+  position: absolute;
+  transform: translate(498px, 268px);
+}
+.m_5 {
+  display: none;
+  position: absolute;
+  transform: translate(523px, 290px);
+}
+.m_6 {
+  display: none;
+  position: absolute;
+  transform: translate(665px, 273px);
+}
+.m_7 {
+  display: none;
+  position: absolute;
+  transform: translate(646px, 300px);
+}
+.m_8 {
+  display: none;
+  position: absolute;
+  transform: translate(555px, 310px);
+}
+.m_9 {
+  display: none;
+  position: absolute;
+  transform: translate(576px, 341px);
+}
+.m_10 {
+  display: none;
+  position: absolute;
+  transform: translate(553px, 374px);
+}
+.m_11 {
+  display: none;
+  position: absolute;
+  transform: translate(651px, 386px);
+}
+.m_11 {
+  display: none;
+  position: absolute;
+  transform: translate(650px, 386px);
+}
+.m_12 {
+  display: none;
+  position: absolute;
+  transform: translate(520px, 430px);
+}
+
+div.cross {
+  width: 1rem;
+  height: 1rem;
+  margin-left: auto;
+}
+
+img.close {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1940px) {
+  .cross {
+    display: none;
+  }
+
+  .form_mountain {
+    position: absolute;
+    margin-left: 260px;
+    width: 16rem;
+    margin-top: 8vh;
+  }
+
+  .form_area {
+    display: none;
+  }
+  .chosen-value,
+  .value-list {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .chosen-value {
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    height: 4rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #fafcfd;
+    border: 3px solid transparent;
+    border-radius: 10px 10px 0 0px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .chosen-value::-webkit-input-placeholder {
+    color: #333;
+  }
+
+  .chosen-value:hover {
+    background-color: #8a8a8ab0;
+    cursor: pointer;
+  }
+
+  .chosen-value:hover::-webkit-input-placeholder {
+    color: #333;
+  }
+
+  .chosen-value:focus,
+  .chosen-value.open {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    background-color: #756d6cb0;
+    color: #000;
+  }
+
+  .chosen-value:focus::-webkit-input-placeholder,
+  .chosen-value.open::-webkit-input-placeholder {
+    color: #000;
+  }
+
+  .value-list {
+    text-align: center;
+    list-style: none;
+    margin-top: 4rem;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .value-list.open {
+    text-align: center;
+    max-height: 320px;
+    overflow: auto;
+  }
+
+  .value-list li {
+    text-align: center;
+    position: relative;
+    height: 4rem;
+    background-color: #fafcfdaa;
+    padding: 1rem;
+    padding-left: 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1;
+  }
+
+  .value-list li:hover {
+    text-align: center;
+    background-color: #756d6cb0;
+  }
+
+  .value-list li.closed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+  }
+
+  /* ------------ taiwan-map ---------------- */
+  div.weather_page svg {
+    margin-left: 16%;
+    width: 30%;
+    /* height: 100vh; */
+  }
+
+  path {
+    stroke: rgb(114, 95, 61);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  path:hover {
+    fill: #b99362;
+    transform: translate(-5px, -5px);
+  }
+
+  /* ----------------weather---------------- */
+  .weather_box {
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 12px black;
+    width: 35%;
+    padding: 2rem 1rem;
+  }
+
+  .weather_page {
+    display: flex;
+  }
+
+  .icon_tem {
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon_tem img {
+    width: 100px;
+    margin-right: 15px;
+  }
+
+  .tem {
+    line-height: 80px;
+    font-size: 42px;
+  }
+
+  .mountain_weather {
+    align-items: center;
+    display: flex;
+    text-align: left;
+  }
+
+  .mountain_name {
+    margin-left: 5%;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .mountain_date {
+    font-size: 17px;
+  }
+
+  .line-right {
+    width: 50px;
+    height: 140px;
+    border-right: solid #464749 3px;
+  }
+
+  .detailed_weather {
+    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 23px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .today_title {
+    margin: 2% 0 2% 5%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  #week_mobile {
+    display: none;
+  }
+
+  #today_time_box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .time_weather.first {
+    /* border: solid 1px rgba(255, 255, 255, 0); */
+    margin-left: 3%;
+  }
+  .time_weather p {
+    font-size: 23px;
+    text-align: center;
+  }
+  .small_center {
+    margin: 0 auto;
+  }
+  .time_weather.first img {
+    /* width: 60%; */
+    margin-left: 15%;
+  }
+  .time_weather img {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .weather_icon_container {
+    width: 44px;
+    height: 33px;
+    margin: 15% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .time_weather {
+    /* border: solid 1px grey; */
+    padding: 0.5%;
+    /* margin-top: 2%; */
+    width: 12%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  div.next_5_days {
+    padding: 0 2rem;
+  }
+
+  .next_title {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .week_date p {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .week_container {
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    align-items: center;
+  }
+  .week_weather_icon {
+    margin-top: 1%;
+    margin-right: -10%;
+  }
+  .week_weather_icon img {
+    margin: 11px 2px;
+    width: 40%;
+    margin-left: 10%;
+  }
+  .close {
+    display: none;
+  }
+}
+
+/* -----------mobile---------------- */
+@media screen and (min-width: 200px) and (max-width: 960px) {
+  .mobile_white {
+    background-color: #e8eaed63;
+  }
+  .n_1 {
+    display: block;
+    position: absolute;
+    transform: translate(156px, 187px);
+  }
+
+  .n_2 {
+    display: block;
+    position: absolute;
+    transform: translate(190px, 206px);
+  }
+
+  .n_3 {
+    display: block;
+    position: absolute;
+    transform: translate(150px, 235px);
+  }
+
+  .n_4 {
+    display: block;
+    position: absolute;
+    transform: translate(168px, 250px);
+  }
+  .n_5 {
+    position: absolute;
+    display: block;
+    transform: translate(267px, 222px);
+  }
+  .n_6 {
+    position: absolute;
+    display: block;
+    transform: translate(117px, 215px);
+  }
+  .north img {
+    width: 15px;
+  }
+  .e_1 {
+    position: absolute;
+    display: block;
+    transform: translate(283px, 288px);
+  }
+  .e_2 {
+    display: block;
+    position: absolute;
+    transform: translate(283px, 306px);
+  }
+  .e_3 {
+    display: block;
+    position: absolute;
+    transform: translate(278px, 323px);
+  }
+  .e_4 {
+    display: block;
+    position: absolute;
+    transform: translate(276px, 342px);
+  }
+  .e_5 {
+    display: block;
+    position: absolute;
+    transform: translate(272px, 366px);
+  }
+  .e_6 {
+    display: block;
+    position: absolute;
+    transform: translate(258px, 379px);
+  }
+  .e_7 {
+    display: block;
+    position: absolute;
+    transform: translate(250px, 402px);
+  }
+  .e_8 {
+    display: block;
+    position: absolute;
+    transform: translate(240px, 428px);
+  }
+  .e_9 {
+    display: block;
+    position: absolute;
+    transform: translate(195px, 535px);
+  }
+  .e_10 {
+    display: block;
+    position: absolute;
+    transform: translate(203px, 500px);
+  }
+  .s_8 {
+    display: block;
+    position: absolute;
+    transform: translate(140px, 561px);
+  }
+  .m_1 {
+    display: block;
+    position: absolute;
+    transform: translate(246px, 251px);
+  }
+  .m_2 {
+    display: block;
+    position: absolute;
+    transform: translate(248px, 266px);
+  }
+  .m_3 {
+    display: block;
+    position: absolute;
+    transform: translate(100px, 259px);
+  }
+  .m_4 {
+    display: block;
+    position: absolute;
+    transform: translate(84px, 281px);
+  }
+  .m_5 {
+    display: block;
+    position: absolute;
+    transform: translate(100px, 306px);
+  }
+  .m_6 {
+    display: block;
+    position: absolute;
+    transform: translate(233px, 280px);
+  }
+  .m_7 {
+    display: block;
+    position: absolute;
+    transform: translate(220px, 305px);
+  }
+  .m_8 {
+    display: block;
+    position: absolute;
+    transform: translate(120px, 336px);
+  }
+  .m_9 {
+    display: block;
+    position: absolute;
+    transform: translate(132px, 360px);
+  }
+  .m_10 {
+    display: block;
+    position: absolute;
+    transform: translate(140px, 381px);
+  }
+  .m_11 {
+    display: block;
+    position: absolute;
+    transform: translate(200px, 388px);
+  }
+  .m_12 {
+    display: block;
+    position: absolute;
+    transform: translate(101px, 415px);
+  }
+  .landmark_all {
+    font-size: 8px;
+  }
+  .north {
+    font-size: 5px;
+  }
+  .north img {
+    width: 12px;
+    height: 17px;
+  }
+
+  .form_mountain {
+    position: absolute;
+    margin: 10px 105.5px;
+    width: 13rem;
+    z-index: 40;
+  }
+
+  .chosen-value,
+  .value-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .chosen-value {
+    text-align: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: #fafcfd;
+    border: 3px solid transparent;
+    border-radius: 10px 10px 0 0px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .chosen-value::-webkit-input-placeholder {
+    color: #333;
+  }
+
+  .chosen-value:hover {
+    background-color: #8a8a8ab0;
+    cursor: pointer;
+  }
+
+  .chosen-value:hover::-webkit-input-placeholder {
+    color: #333;
+  }
+
+  .chosen-value:focus,
+  .chosen-value.open {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    background-color: #8a8a8ab0;
+    color: #1f1f1f;
+  }
+
+  .chosen-value:focus::-webkit-input-placeholder,
+  .chosen-value.open::-webkit-input-placeholder {
+    color: #1f1f1f;
+  }
+
+  .value-list {
+    text-align: center;
+    list-style: none;
+    margin-top: 3rem;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .value-list.open {
+    text-align: center;
+    max-height: 320px;
+    overflow: auto;
+  }
+
+  .value-list li {
+    position: relative;
+    height: 3rem;
+    background-color: #fafcfdc9;
+    padding: 1rem;
+    justify-content: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1;
+  }
+
+  .value-list li:hover {
+    text-align: center;
+    background-color: #818181;
+  }
+
+  .value-list li.closed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+  }
+  /* -----------------------area-dropdown------------------------ */
+
+  /* --------------------taiwan-map------------------------- */
+  section.fixed-section {
+    max-width: 100%;
+  }
+
+  div.weather_page svg {
+    margin-top: 80px;
+    margin-left: -80px;
+    z-index: -1;
+    position: absolute;
+  }
+
+  path {
+    stroke: rgb(114, 95, 61);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .float {
+    fill: #b99362;
+    /* transform: translate(-5px, -5px); */
+  }
+
+  path:hover {
+    fill: #b99362;
+    transform: translate(-5px, -5px);
+  }
+
+  .weather_box {
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 0 7%;
+    margin-top: 37%; */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.596);
+    width: 85%;
+    /* height: 700px; */
+    display: none;
+    padding: 1rem;
+  }
+
+  .weather_page {
+    display: block;
+  }
+  .icon_tem {
+    display: flex;
+    align-items: center;
+  }
+
+  .tem {
+    display: inline-block;
+    font-size: 3rem;
+    padding-top: 0.4rem;
+    color: var(--third-color);
+  }
+
+  .mountain_weather {
+    align-items: center;
+    display: block;
+    text-align: left;
+  }
+
+  .mountain_name {
+    line-height: 30px;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+  }
+
+  .mountain_date {
+    font-size: 16px;
+    color: #989898;
+  }
+
+  .icon_tem_img {
+    margin-top: 10px;
+    width: 5rem;
+    height: 3rem;
+    margin-right: 2.5rem;
+  }
+
+  .icon_tem_img img {
+    /* margin-right: 15px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .line {
+    margin: 1rem auto;
+    width: 90%;
+    border-top: solid #cccccc 1.5px;
+  }
+
+  .line-right {
+    display: none;
+  }
+
+  .detailed_weather {
+    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #high_tem,
+  #low_tem,
+  #wind,
+  #rain,
+  #sunrise,
+  #sunset {
+    font-weight: 500;
+    color: var(--third-color);
+  }
+
+  .today_title {
+    display: none;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  #today_time_box {
+    display: none;
+  }
+  #week_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .next_title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 0.8rem;
+  }
+
+  .week_mobile_weather.first {
+    margin-left: 2%;
+  }
+  .week_mobile_weather p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .week_small {
+    margin: 0 auto;
+  }
+
+  .weather_icon_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .weather_icon_container {
+    width: 40px;
+    height: 40px;
+    margin: 1rem auto;
+  }
+  .week_mobile_weather {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 16%;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+
+  .week_container {
+    display: none;
+  }
+}

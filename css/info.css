@@ -1,0 +1,601 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.button-group {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 24px;
+  box-shadow: 10px 10px 5px #5a5a5a;
+  margin-bottom: 20px;
+  background-color: rgba(218, 165, 32, 0.274) !important;
+  color: #5a5a5a !important;
+  border: #5a5a5a !important;
+}
+
+.btn.btn-outline-light:hover {
+  background-color: #fbae2f !important;
+  color: white !important;
+}
+
+.title {
+  font-size: 33px;
+  color: rgb(136, 136, 136);
+  margin: 50px;
+}
+
+.card1 {
+  margin: 0 auto;
+  font-size: 16px;
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.315); */
+}
+
+/* -----------最新消息-------------- */
+.text-box {
+  color: aliceblue;
+  text-align: justify;
+  padding: 20px;
+}
+
+.box2 span {
+  float: right;
+}
+
+/* -----------關於我們-------------- */
+.box3 {
+  display: flex;
+}
+.logo {
+  background-color: #042033;
+  width: 440px;
+  height: 333px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+.box3 img {
+  width: 440px;
+  height: 333px;
+}
+.guideinfo {
+  padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #return-to-top {
+    display: none;
+  }
+  #return-to-top1 {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top1 i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top1:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  #return-to-top1:hover i {
+    color: #fff;
+    top: 5px;
+  }
+
+  #return-to-top1 {
+    margin: 170% 86%;
+    z-index: 999;
+  }
+
+  .layer1,
+  .layer2 {
+    display: none;
+  }
+  .subject,
+  .subject2 {
+    display: none;
+  }
+
+  .mask {
+    background: url(../img/Wallpaperkiss_1016260.jpg) center center fixed
+      no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .return-to-top {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  /* -----------最新消息-------------- */
+  .card1-1 {
+    background-color: none;
+  }
+  .title-2-1 {
+    display: none;
+  }
+  .container1 {
+    padding-left: -15px;
+  }
+  .text1 {
+    color: aliceblue;
+    text-align: justify;
+    padding: 0px;
+  }
+  .box2 {
+    display: flex;
+    width: 345px;
+    height: auto;
+    margin: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+  }
+
+  .box2 img {
+    max-width: 150px;
+    max-height: 200px;
+    margin: 20px 5px;
+  }
+  .boxinfo {
+    margin: 20px 10px;
+  }
+  /* -----------關於我們-------------- */
+  .box3 {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+
+  /* -----------嚮導介紹-------------- */
+  .title-2 {
+    display: none;
+  }
+
+  .imgboxleft {
+    width: 345px;
+    height: 500px;
+  }
+
+  .guideinfo {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+  }
+
+  .text3 {
+    padding: 0;
+  }
+
+  .imgboxright {
+    width: 345px;
+    display: flex;
+  }
+
+  .imgboxright img {
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
+    margin: 60px 4px;
+  }
+  .guideph {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .guideph2 {
+    display: none;
+  }
+
+  .phone_title {
+    float: left;
+    background: none;
+    margin: 20px 0;
+    color: black;
+  }
+  .carousel {
+    width: 345px;
+    height: 350px;
+  }
+
+  .carousel-item {
+    width: 345px;
+    height: 300px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutus {
+    background: rgba(0, 0, 0, 0.65);
+    text-align: left;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2;
+  }
+
+  .aboutus-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    margin: 100px 0px 50px 0px;
+  }
+
+  div.side-navbar img {
+    vertical-align: 0;
+  }
+
+  div.module-navbar div.dropDown-box ul {
+    margin-top: 1rem;
+  }
+
+  div.module-navbar div.dropDown-box ul p {
+    margin-bottom: 0.5rem;
+  }
+
+  #return-to-top1 {
+    display: none;
+  }
+  #return-to-top {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /* margin: 30% 90%; */
+    z-index: 1;
+  }
+
+  #return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  #return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+  }
+
+  .mask {
+    height: 100%;
+    background: linear-gradient(95deg, #dddddd 19%, white 77%);
+    background: -moz-linear-gradient(95deg, #dddddd 19%, white 77%);
+    background: -webkit-linear-gradient(95deg, #dddddd 19%, white 77%);
+    background: -o-linear-gradient(95deg, #dddddd 19%, white 77%);
+  }
+
+  .title-2 {
+    margin-bottom: -20px;
+    padding: 20px;
+    color: #fbae2f;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .return-to-top {
+    right: 100px;
+    bottom: 10px;
+  }
+  /* -----------最新消息-------------- */
+  .card1 {
+    background-color: rgba(0, 0, 0, 0.315);
+  }
+  .text1 {
+    color: aliceblue;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .rule {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  button {
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+  }
+  .box2 {
+    width: 100%;
+  }
+
+  .container1 {
+    column-count: 3;
+  }
+
+  .boxinfo {
+    margin: 10px;
+  }
+  .box2 span {
+    margin-bottom: 25px;
+  }
+  .box2 img {
+    max-width: 309px;
+    max-height: 206px;
+  }
+
+  /* -----------關於我們-------------- */
+
+  .text2 {
+    padding: 50px;
+  }
+
+  .boxinfo2 {
+    margin: 100px 20px;
+  }
+  .carousel {
+    display: none;
+  }
+  .aboutus {
+    display: none;
+  }
+  .logo {
+    animation-name: about1;
+    animation-duration: 3s;
+    opacity: 0.8;
+  }
+
+  @keyframes about1 {
+    from {
+      transform: translateX(-710px);
+    }
+
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+  .about2 {
+    animation-name: about2;
+    animation-duration: 3s;
+    opacity: 0.8;
+  }
+
+  @keyframes about2 {
+    from {
+      transform: translateX(710px);
+    }
+
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+  .about3 {
+    animation-name: about3;
+    animation-duration: 3s;
+    opacity: 0;
+  }
+
+  @keyframes about3 {
+    from {
+      transform: translateX(-710px);
+    }
+
+    to {
+      transform: translateX(0px);
+      opacity: 0.8;
+    }
+  }
+  /* -----------嚮導介紹-------------- */
+
+  .phone_title {
+    display: none;
+  }
+  .imgboxleft {
+    width: 450px;
+    height: 570px;
+    background-color: rgba(240, 248, 255, 0.671);
+    color: black;
+    display: inline-block;
+  }
+  .guideph img {
+    display: none;
+  }
+
+  .imgboxright {
+    width: 500px;
+    height: auto;
+    margin-right: -10px;
+  }
+
+  .guideph2 {
+    width: 250px;
+    height: 278px;
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+  }
+  .guideph2:hover {
+    cursor: pointer;
+  }
+
+  .guideph2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text3 {
+    display: flex;
+    margin: 10px;
+  }
+
+  /* ---------統一套版--------- */
+
+  section.zoom {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/Wallpaperkiss_1016260.jpg);
+    background-size: cover;
+    margin-top: -86px;
+    z-index: -1;
+  }
+
+  section.zoom:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    background: linear-gradient(transparent, #fff);
+  }
+
+  .layer1 {
+    width: 100%;
+    bottom: -40%;
+    position: absolute;
+    left: -18%;
+    transition: 3s;
+  }
+
+  .layer2 {
+    width: 100%;
+    position: absolute;
+    left: 19%;
+    bottom: -40%;
+    transition: 3s;
+  }
+
+  .word1 {
+    font-size: 100px;
+  }
+  .word2 {
+    color: white;
+    font-size: 56px;
+  }
+
+  .subject {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    bottom: -10%;
+    color: white;
+    display: inline-block;
+    animation-name: w1;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+
+  @keyframes w1 {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(3);
+      opacity: 1;
+    }
+  }
+
+  .subject2 {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    bottom: -10%;
+    color: white;
+    display: inline-block;
+    animation-name: w2;
+    opacity: 0;
+    animation-duration: 3s;
+  }
+
+  @keyframes w2 {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(4);
+      opacity: 1;
+    }
+  }
+}

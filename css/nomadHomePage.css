@@ -1,0 +1,1701 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/* 色票設定 */
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #cf7500;
+  --third-color: #424642;
+  --fourth-color: #123132;
+  --fifth-color: #9a9a9a;
+  --sixth-color: #1f1f1f;
+  --seventh-color: #ff91005d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* a超連結樣式設定 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none !important;
+  /* color: black !important; */
+}
+
+/* li樣式去掉前面圖案設定 */
+li {
+  list-style-type: none;
+}
+
+/* <p>標籤設定歸零 */
+p {
+  margin: 0.3rem 0;
+  padding: 0;
+}
+
+/* <ul>標籤預設padding歸零 */
+ul {
+  padding: 0;
+}
+
+/* Carousel套件樣式設定 */
+.flickity-viewport {
+  cursor: default !important;
+}
+
+/* 預設中文字體 */
+.ff-noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 預設英文字體 */
+.ff-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.ff-airbnb {
+  font-family: "Airbnb Cereal App";
+}
+
+/* svg尺寸 class設定 */
+.svg {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+/* navbar 專屬logo-svg設定 */
+.navbar-logo-svg {
+  width: 5rem;
+  height: 3rem;
+}
+
+/* flex class設定 */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* 上下左右margin class設定 */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.mr-1 {
+  margin-right: 1rem !important;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem !important;
+}
+.mt-4 {
+  margin-top: 4rem !important;
+}
+.ml-6 {
+  margin-left: 6.7rem !important;
+}
+.mr-2 {
+  margin-right: 2rem !important;
+}
+
+/* display: none class設定 */
+.none {
+  display: none;
+}
+
+/* icon-heart點擊後變紅 */
+.icon-heart.open {
+  fill: rgb(219, 71, 71) !important;
+  stroke: rgb(219, 71, 71) !important;
+}
+
+.icon-heart:active {
+  transform: scale(0.8) !important;
+}
+
+/* --------------------Side-navbar------------------- */
+
+div.side-navbar {
+  background-color: var(--fourth-color);
+  position: fixed;
+  z-index: 998;
+  width: 90px;
+  border-radius: 0 3rem 3rem 0;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  padding-top: 1.5%;
+  text-align: center;
+}
+
+div.side-navbar img {
+  width: 100%;
+}
+
+div.side-navbar svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+div.side-navbar div.outer-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.side-navbar-flex {
+  flex-direction: column;
+  align-content: center;
+}
+
+div.side-navbar div.homepage-container {
+  height: 445px;
+  overflow: hidden;
+}
+
+div.side-navbar div.navbar-item {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  transition: 0.5s;
+}
+
+div.side-navbar div.navbar-item:hover {
+  transform: scale(1.1);
+}
+
+div.side-navbar div.navbar-item p.text {
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+}
+
+div.side-navbar div.icon-arrow-down {
+  cursor: pointer;
+  transition: 0.35s;
+  fill: white;
+}
+
+div.side-navbar div.icon-arrow-up:hover {
+  transform: translateY(-10px);
+}
+
+div.side-navbar div.icon-arrow-down:hover {
+  transform: translateY(10px);
+}
+
+div.side-navbar div.icon-arrow-down.hide {
+  transform: translateY(10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-down.show {
+  transform: translateY(-10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up.hide {
+  transform: translateY(-10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-up.show {
+  transform: translateY(10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up {
+  fill: white;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+div.side-navbar div.side-navbar-item {
+  transition: 0.5s;
+  transform: translateY(-49%);
+}
+
+div.side-navbar div.side-navbar-item.slide-down {
+  transform: translateY(2.5%);
+}
+
+div.side-navbar div.side-navbar-item.slide-up {
+  transform: translateY(-49%);
+}
+
+/* --------------------Navbar-mobile------------------------ */
+
+div.module-navbar {
+  background-color: var(--fourth-color);
+  padding: 0 0.5rem;
+}
+
+div.module-navbar div.navbar-left {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.module-navbar div.navbar-left img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+div.navbar-right div.hamburger {
+  position: relative;
+  z-index: 998;
+  display: flex;
+  transition: 0.2s ease-in-out 0.8s;
+}
+.hamburger #check {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 90000;
+  cursor: pointer;
+  opacity: 0;
+}
+.hamburger #check:checked ~ .hamburger-menu-container .hamburger-menu div {
+  background-color: transparent;
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:before {
+  transform: translateY(0) rotate(-45deg);
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:after {
+  transform: translateY(0) rotate(45deg);
+}
+.hamburger .hamburger-menu-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hamburger .hamburger-menu-container .hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative;
+  z-index: 1001;
+  transition: 0.5s;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:before,
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.hamburger .hamburger-menu-container .hamburger-menu div:before {
+  transform: translateY(-8px);
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  transform: translateY(8px);
+}
+
+nav.menu-btn {
+  right: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  right: -100%;
+  top: 0;
+  background-color: white;
+  height: 200vh;
+  padding: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+nav li {
+  margin-bottom: 2rem;
+}
+
+nav li p {
+  margin-bottom: 0;
+}
+
+nav p {
+  font-size: 1.2rem;
+  color: var(--fourth-color);
+  font-weight: 500;
+}
+
+nav .icon-arrow-forward {
+  fill: var(--fourth-color);
+  width: 1rem;
+}
+
+nav .icon-nomad-logo path {
+  fill: var(--fourth-color);
+}
+
+div.module-navbar svg.icon-cart {
+  stroke: white;
+  fill: none;
+}
+
+nav p.text {
+  letter-spacing: 2px;
+  line-height: 1.7;
+  color: var(--fourth-color);
+  margin-bottom: 1rem;
+}
+
+nav div.btns {
+  justify-content: flex-start;
+}
+
+nav div.logout-btn,
+div.login-btn {
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav div.signup-btn {
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+}
+
+nav div.logout-btn,
+div.login-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav div.signup-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+nav div.user-account {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+nav div.user-account img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: 0;
+}
+
+nav p.userName {
+  display: inline-block;
+  color: var(--fourth-color);
+  margin-bottom: 3rem;
+  vertical-align: middle;
+}
+
+nav p.logout {
+  margin: 2rem 0;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--fifth-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--fifth-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav p.logout:active {
+  transform: scale(0.95);
+}
+
+.module-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+
+.module-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* --------------Hero-section-mobile----------------------- */
+
+section.hero-section div.hero-image {
+  position: relative;
+  z-index: -1;
+  background-image: url(../images/hero-mountain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 22%;
+  height: 86vh;
+}
+
+section.hero-section .hero-image .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  white-space: nowrap;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* -----------------News-section-mobile--------------------  */
+
+section.news-section {
+  margin-top: 4rem;
+}
+
+section.news-section .container {
+  padding: 0 1rem;
+}
+
+section.news-section div.newsbox-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+section.news-section h3.title {
+  margin: 0.5rem 0;
+}
+
+section.news-section p.newsbox-text {
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  color: var(--third-color);
+}
+
+section.news-section div.readmore-cta {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+section.news-section div.readmore-cta:active {
+  transform: scale(0.95);
+}
+
+section.news-section div.readmore-cta:hover {
+  background-color: var(--secondary-color);
+}
+
+/* -----------------explore-section-mobile----------------*/
+
+section.explore-section {
+  margin-top: 5rem;
+  background-color: #f4f4f4;
+}
+
+section.explore-section div.explore-banner-image {
+  background-image: url(../images/kalen-emsley-7bwQXzbF6KE-unsplash.jpg);
+}
+
+section.explore-section div.container {
+  padding: 1rem;
+}
+
+section.explore-section h2.title {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+section.explore-section .flickity-page-dots {
+  margin-bottom: -20px !important;
+}
+
+section.explore-section .flickity-button-icon {
+  left: 33% !important;
+  top: 36% !important;
+  width: 30% !important;
+  height: 30% !important;
+}
+section.explore-section .flickity-prev-next-button {
+  width: 34px !important;
+  height: 34px !important;
+}
+section.explore-section .flickity-prev-next-button.previous {
+  left: -15px !important;
+}
+section.explore-section .flickity-prev-next-button.next {
+  right: -15px !important;
+}
+
+section.explore-section div.carousel-cell {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+section.explore-section div.carousel-cell-d {
+  display: none;
+}
+
+section.explore-section div.carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+section.explore-section div.carousel-cell p.title {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+}
+
+section.explore-section div.carousel-cell p.mountain-info {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+section.explore-section div.cover {
+  width: 100%;
+  height: 100%;
+  color: white;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 0.5rem;
+}
+section.explore-section div.cover:hover {
+  transition: 0.8s;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+section.explore-section h3.title {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 3.5rem;
+}
+
+section.explore-section p.text {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+div.explore-section-cta {
+  width: 50%;
+  margin: 3rem auto;
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+div.explore-section-cta:active {
+  transform: scale(0.95);
+}
+
+div.explore-section-cta:hover {
+  background-color: var(--secondary-color);
+}
+
+/* --------------------detail-section-mobile------------------------*/
+
+section.detail-section {
+  margin-top: 2rem;
+}
+
+section.detail-section div.detail-banner-image {
+  background-image: url(../images/geoffrey-price-8CuVNSQ3RS4-unsplash.png);
+}
+
+section.detail-section .container {
+  padding: 0 3rem;
+}
+
+section.detail-section h2.title {
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+section.detail-section p.title-text {
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+section.detail-section div.weather,
+div.favor-list {
+  width: 100%;
+}
+
+section.detail-section div.weather div.weather-img {
+  background-image: url(../images/michael-coury-DiKkJKvDi64-unsplash.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+
+section.detail-section div.weather div.weather-img:hover {
+  background-image: url(../images/rain.jpeg);
+}
+
+div.weather div.left-section h4.title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+div.weather div.left-section p.text {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #9a9a9a;
+}
+
+section.detail-section div.flex {
+  align-items: flex-start;
+}
+
+section.detail-section div.favor-list div.favor-list-img {
+  background-image: url(../images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+
+section.detail-section div.favor-list div.favor-list-img:hover {
+  background-image: url(../images/fallhiker.jpg);
+}
+
+div.favor-list div.left-section h4.title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+div.favor-list div.left-section p.text {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #9a9a9a;
+}
+
+section.detail-section div.flex {
+  align-items: flex-start;
+}
+
+div.detail-section-cta {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+div.detail-section-cta:active {
+  transform: scale(0.95);
+}
+
+div.detail-section-cta:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ----------------Achievement-section-mobile---------------- */
+
+section.achievement-section {
+  margin-top: 4rem;
+  background-color: #f4f4f4;
+}
+
+section.achievement-section div.achievement-banner-image {
+  background-image: url(../images/section3-pic.png);
+}
+
+section.achievement-section div.container {
+  padding: 1rem 3rem;
+}
+
+section.achievement-section h2.title {
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+div.achievement-card {
+  margin-top: 2rem;
+}
+
+div.achievement-card div {
+  text-align: center;
+}
+
+div.achievement-card div.topBox-middle {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  padding: 0.8rem;
+}
+
+div.achievement-card div.topBox {
+  justify-content: space-around;
+}
+
+section.achievement-section div.achievement-card div.topBox p.number {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+section.achievement-section div.bottomBox {
+  margin-top: 2rem;
+}
+
+section.achievement-section div.bottomBox div.img {
+  width: 23%;
+}
+
+section.achievement-section div.bottomBox div.img img {
+  width: 100%;
+}
+
+section.achievement-section div.bottomBox div.img1 img:hover {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 17px lightblue);
+  transition: 0.6s;
+}
+
+section.achievement-section div.bottomBox div.img2 img:hover {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 17px rgb(187, 152, 55));
+  transition: 0.6s;
+}
+
+section.achievement-section div.bottomBox div.img3 img {
+  width: 100%;
+}
+
+section.achievement-section div.bottomBox div.img3 img:hover {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 17px rgb(142, 145, 146));
+  transition: 0.6s;
+}
+
+section.achievement-section div.bottomBox div.img4 img:hover {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 17px rgb(112, 63, 51));
+  transition: 0.6s;
+}
+
+section.achievement-section div.number {
+  justify-content: space-around;
+}
+
+section.achievement-section p.title-text {
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+div.achievement-section-cta {
+  width: 60%;
+  margin: 1rem auto 3rem auto;
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+div.achievement-section-cta:active {
+  transform: scale(0.95);
+}
+
+div.achievement-section-cta:hover {
+  background-color: var(--secondary-color);
+}
+
+/* --------------------comment-section-mobile--------------------- */
+
+section.comment-section {
+  margin-top: 5rem;
+}
+
+section.comment-section div.container {
+  padding: 0 2rem;
+}
+
+section.comment-section div.comment-banner-image {
+  background-image: url(../images/aubrey-odom-81e55HH_O08-unsplash.png);
+}
+
+section.comment-section h2.title {
+  line-height: 1.3;
+  text-align: center;
+}
+
+section.comment-section div.carousel {
+  margin-top: 2rem;
+}
+
+section.comment-section div.comment-card {
+  width: 100%;
+  height: 380px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid #cccccc; */
+  background-color: #f4f4f4;
+}
+
+section.comment-section div.comment-card svg.icon-message {
+  width: 3rem;
+  height: 3rem;
+  fill: #686359;
+}
+
+section.comment-section div.comment-card p.title-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  height: 190px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  word-break: break-all;
+  text-indent: 2rem;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+section.comment-section div.comment-card div.user-info-box {
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+section.comment-section div.comment-card div.left-box {
+  width: 70px;
+  height: 70px;
+  margin-right: 0.5rem;
+}
+
+section.comment-section div.comment-card div.left-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section.comment-section div.comment-card div.right-box p.text-name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #3b3b3b;
+}
+
+section.comment-section div.comment-card svg.icon-star {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--primary-color);
+}
+
+section.comment-section div.comment-section-cta {
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  width: fit-content;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+  transition: 0.25s;
+}
+
+section.comment-section div.comment-section-cta:active {
+  transform: scale(0.95);
+}
+
+section.comment-section button.flickity-prev-next-button.next {
+  right: -20px;
+}
+
+section.comment-section button.flickity-prev-next-button.previous {
+  left: -20px;
+}
+
+section.comment-section .flickity-button-icon {
+  left: 33%;
+  top: 36%;
+  width: 30%;
+  height: 30%;
+}
+
+/* ----------------------footer-section-mobile----------------------- */
+
+section.footer-section {
+  margin-top: 10rem;
+  margin-bottom: 3.3rem;
+  background-image: url(../images/component-pic/footer.png);
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----------------spaceForFixed-mobile------------------------- */
+
+/* div.spaceForFixed-mobile {
+  height: 54px;
+} */
+
+/* ---------------------fixed-section-mobile------------------------- */
+
+section.fixed-section {
+  background-color: white;
+  padding: 0.7rem 0.5rem;
+  position: fixed;
+  z-index: 998;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+section.fixed-section div.homepage-container {
+  justify-content: space-around;
+}
+
+section.fixed-functions {
+  width: 23%;
+  vertical-align: middle;
+}
+
+section.fixed-section svg {
+  fill: var(--fourth-color);
+  vertical-align: middle;
+}
+
+section.fixed-section svg.icon-cart {
+  stroke: var(--fourth-color);
+  fill: none;
+}
+
+section.fixed-section span.nav-badge {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 1420px) {
+  /* ---------------------side-navbar-desktop-------------------- */
+
+  div.side-navbar {
+    display: block;
+  }
+
+  /* --------------------Navbar-desktop------------------------ */
+
+  div.module-navbar {
+    background-color: transparent;
+    padding: 1rem 2rem;
+  }
+
+  div.module-navbar div.navbar-left {
+    width: 120px;
+    height: 50px;
+  }
+
+  div.module-navbar div.navbar-right {
+    justify-content: center;
+  }
+
+  div.module-navbar div.navbar-right div.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  div.module-navbar div.navbar-right div.cart svg.icon-cart:hover {
+    transform: rotate(-15deg);
+  }
+
+  div.module-navbar div.navbar-right span.nav-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    background-color: var(--primary-color);
+  }
+
+  div.module-navbar div.navbar-right div.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.module-navbar div.left-box {
+    width: 50px;
+    position: relative;
+  }
+
+  div.module-navbar div.left-box div.user-account {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box div.user-account:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.user-account img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user {
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: white;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box.open {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box {
+    position: absolute;
+    top: 110%;
+    left: -150px;
+    width: 200px;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1.5px solid #cccccc;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li {
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    text-align: center;
+    transition: 0.5s;
+    text-align: left;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li svg {
+    width: 1.2rem;
+    margin-right: 1rem;
+    fill: var(--third-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li span {
+    display: inline-block;
+    color: var(--sixth-color);
+    vertical-align: middle;
+    transition: 0.5s;
+    font-size: 0.9rem;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li p.text {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    text-align: center;
+    width: fit-content;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.5s;
+    border: 2px solid var(--primary-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:not(li.logout):hover {
+    background-color: #f4f4f4;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover > span.text {
+    transform: scale(1.1);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover p.text {
+    background-color: white;
+    color: var(--primary-color);
+  }
+
+  div.module-navbar div.left-box img {
+    width: 100%;
+  }
+
+  div.module-navbar div.right-box p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  div.module-navbar div.hamburger {
+    display: none;
+  }
+
+  /* -----------------hero-section-desktop-------------- */
+
+  section.hero-section div.hero-image {
+    margin-top: -86px;
+    background-position-y: 30%;
+  }
+
+  section.hero-section div.hero-image p.slogan {
+    font-size: 5rem;
+  }
+
+  /* -----------------news-section-desktop--------------- */
+
+  section.news-section {
+    margin-top: 7rem;
+  }
+
+  section.news-section h2.title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  section.news-section .container {
+    padding: 0 10rem;
+  }
+
+  section.news-section ul.flex {
+    margin-top: 5rem;
+    width: 85%;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+
+  section.news-section ul li.newsbox {
+    display: block;
+    width: 32%;
+  }
+
+  section.news-section ul li.newsbox p.newsbox-text {
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  section.news-section div.readmore-cta {
+    width: 15%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+  }
+
+  section.news-section h3.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  section.news-section div.date {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* -------------------explore-section-desktop---------------- */
+
+  section.explore-section {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    background-color: white;
+  }
+
+  section.explore-section div.explore-banner-image {
+    display: block;
+    background-position: center;
+    height: 600px;
+  }
+
+  section.explore-section div.container {
+    position: relative;
+    padding: 1rem 15rem;
+  }
+
+  section.explore-section h2.title {
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    top: -600px;
+  }
+
+  section.explore-section .carousel-none {
+    display: none;
+  }
+
+  section.explore-section .carousel {
+    display: none;
+  }
+
+  section.explore-section div.main-carousel {
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+  section.explore-section div.main-carousel div.carousel-cell-d {
+    position: relative;
+    display: block;
+    width: 31%;
+    height: 300px;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+  }
+
+  section.explore-section div.main-carousel div.carousel-cell-d img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+  }
+
+  div.cover {
+    width: 100%;
+    height: 300px;
+    color: white;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border-radius: 0.5rem;
+  }
+
+  div.cover:hover {
+    transition: 0.8s;
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+  }
+
+  section.explore-section div.main-carousel div.carousel-cell-d p.title {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  section.explore-section
+    div.main-carousel
+    div.carousel-cell-d
+    p.mountain-info {
+    margin: 0 auto;
+    width: 85%;
+    line-height: 1.7;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  section.explore-section h3.title {
+    margin-top: 8rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  section.explore-section p.text {
+    width: 25%;
+    line-height: 2.5;
+    font-size: 1.3rem;
+    margin: 3rem auto;
+  }
+
+  div.explore-section-cta {
+    width: 15%;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  /* -------------------detail-section-desktop--------------- */
+
+  section.detail-section {
+    margin-top: 2rem;
+  }
+
+  section.detail-section div.detail-banner-image {
+    display: block;
+    background-position: center;
+    height: 600px;
+  }
+
+  section.detail-section h1.title {
+    display: block;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    top: -550px;
+    white-space: nowrap;
+  }
+
+  section.detail-section div.container {
+    position: relative;
+    background-color: white;
+    padding: 1rem 15rem;
+  }
+
+  section.detail-section div.detail-card {
+    justify-content: space-evenly;
+    padding: 5rem;
+    margin-top: -900px;
+  }
+
+  section.detail-section div.weather,
+  div.favor-list {
+    width: 25%;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.12);
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+
+  section.detail-section div.weather-img,
+  div.favor-list-img {
+    display: block;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  section.detail-section div.detail-card h4.title {
+    margin-bottom: 2rem;
+  }
+
+  section.detail-section h2.title {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  section.detail-section p.title-text {
+    width: 25%;
+    line-height: 2.5;
+    font-size: 1.3rem;
+    margin: 3rem auto;
+  }
+
+  section.detail-section div.detail-section-cta {
+    width: 15%;
+    margin-top: 15rem;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  /* ------------------achievement-section-desktop-----------------------*/
+
+  section.achievement-section {
+    margin-top: 6.5rem;
+  }
+
+  section.achievement-section div.achievement-banner-image {
+    background-position: center;
+    height: 600px;
+  }
+
+  section.achievement-section h1.title {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -500px;
+    margin-bottom: 5rem;
+    color: white;
+  }
+
+  section.achievement-section h2.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+
+  section.achievement-section div.container {
+    background-color: white;
+    position: relative;
+  }
+
+  section.achievement-section div.achievement-card {
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: white;
+    opacity: 0.9;
+  }
+
+  section.achievement-section div.achievement-card div.bottomBox {
+    align-items: flex-end;
+  }
+
+  section.achievement-section div.bottomBox div.img3 img {
+    width: 100%;
+    height: 126px;
+  }
+
+  section.achievement-section div.achievement-card div.number {
+    justify-content: space-around;
+  }
+
+  section.achievement-section p.number,
+  section.achievement-section p.text {
+    font-size: 1.5rem;
+  }
+
+  section.achievement-section div.achievement-card div.topBox-middle {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    font-weight: 500;
+  }
+
+  section.achievement-section h2.title {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  div.achievement-card div.topBox-middle {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  section.achievement-section p.title-text {
+    width: 25%;
+    line-height: 2.5;
+    font-size: 1.3rem;
+    margin: 10rem auto 0 auto;
+  }
+
+  section.achievement-section div.achievement-card div.topBox p.number {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  div.achievement-section-cta {
+    width: 15%;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  /* ----------------------comment-section-desktop----------------------- */
+
+  section.comment-section {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
+
+  section.comment-section {
+    position: relative;
+  }
+
+  section.comment-section div.comment-banner-image {
+    background-position: center;
+    height: 600px;
+  }
+
+  section.comment-section h2.title {
+    position: absolute;
+    font-size: 4rem;
+    margin-top: -580px;
+    margin-bottom: 5rem;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  section.comment-section h3.title {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -380px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: 0.25s;
+  }
+
+  section.comment-section h3.title:hover {
+    background-color: var(--secondary-color);
+  }
+
+  section.comment-section h3.title:active {
+    transform: scale(0.95) translateX(-50%);
+  }
+
+  section.comment-section div.comments {
+    margin-top: 5rem;
+    padding: 0 7rem;
+  }
+
+  section.comment-section div.comment-card {
+    display: block;
+    width: 19%;
+    margin-right: 1rem;
+  }
+
+  section.comment-section div.comment-section-cta {
+    display: none;
+  }
+
+  section.comment-section .flickity-page-dots {
+    bottom: -50px;
+  }
+
+  /* --------------------------footer-section-desktop--------------------- */
+
+  section.footer-section {
+    margin-top: 20rem;
+    margin-bottom: 0;
+    height: 540px;
+  }
+
+  /* -----------------------fixed-section-desktop--------------------- */
+
+  section.fixed-section {
+    display: none;
+  }
+}

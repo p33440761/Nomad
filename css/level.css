@@ -1,0 +1,1004 @@
+body {
+  background: url(../images/hero-image.jpg) center center fixed;
+
+  /* overflow: hidden; */
+  background-size: cover;
+  z-index: -10;
+  width: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+  /* height:500vh; */
+}
+
+ul li {
+  list-style: none;
+}
+.btn-info {
+  font-size: 16px;
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #123132eb;
+  color: #fff;
+}
+
+@media screen and (min-width: 200px) and (max-width: 960px) {
+  body {
+    background: url(../images/hero-image.jpg) center center no-repeat;
+    background-position: 43%;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -10;
+    width: 100%;
+    font-family: "Noto Sans TC", sans-serif;
+    height: 130vh;
+  }
+
+  .mobile_white {
+    position: absolute;
+    background-color: #e8eaed63;
+    z-index: 2;
+    height: 130vh;
+  }
+  .dropdown-box {
+    display: flex;
+    max-width: 100%;
+  }
+  .dropdown {
+    width: 85px;
+    margin: 10px 20px 0px 20px;
+    position: relative;
+  }
+
+  .dropdown p {
+    font-size: 11px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #a9c9e200;
+    background: #ffffffa1 no-repeat right 4px;
+    color: #083522;
+    cursor: pointer;
+  }
+
+  .dropdown ul {
+    z-index: 999;
+    width: 85px;
+    background: #ffffffd2;
+    margin-top: -1px;
+    border: 1px solid #a9c9e200;
+    position: absolute;
+    display: none;
+  }
+
+  .dropdown ul li {
+    height: 28px;
+    font-size: 11px;
+    line-height: 28px;
+    text-align: center;
+    border-bottom: 0.2px solid rgba(211, 211, 211, 0.685);
+  }
+
+  .dropdown ul li a {
+    display: block;
+    height: 12px;
+    color: #3c3d3d;
+    text-decoration: none;
+  }
+
+  div.cross {
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    margin-right: 1.5rem;
+  }
+
+  img.close {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .dropdown ul li a:hover {
+    background: #babfc886;
+    color: #369;
+  }
+
+  .landmark_all {
+    font-size: 8px;
+  }
+  .north {
+    font-size: 5px;
+  }
+  .north img {
+    width: 12px;
+    height: 17px;
+  }
+
+  .n_1 {
+    display: block;
+    position: absolute;
+    transform: translate(156px, 187px);
+  }
+
+  .n_2 {
+    display: block;
+    position: absolute;
+    transform: translate(190px, 206px);
+  }
+
+  .n_3 {
+    display: block;
+    position: absolute;
+    transform: translate(150px, 235px);
+  }
+
+  .n_4 {
+    display: block;
+    position: absolute;
+    transform: translate(168px, 250px);
+  }
+  .n_5 {
+    position: absolute;
+    display: block;
+    transform: translate(267px, 222px);
+  }
+  .n_6 {
+    position: absolute;
+    display: block;
+    transform: translate(117px, 215px);
+  }
+  .north img {
+    width: 15px;
+  }
+  .e_1 {
+    position: absolute;
+    display: block;
+    transform: translate(283px, 288px);
+  }
+  .e_2 {
+    display: block;
+    position: absolute;
+    transform: translate(283px, 306px);
+  }
+  .e_3 {
+    display: block;
+    position: absolute;
+    transform: translate(278px, 323px);
+  }
+  .e_4 {
+    display: block;
+    position: absolute;
+    transform: translate(276px, 342px);
+  }
+  .e_5 {
+    display: block;
+    position: absolute;
+    transform: translate(272px, 366px);
+  }
+  .e_6 {
+    display: block;
+    position: absolute;
+    transform: translate(258px, 379px);
+  }
+  .e_7 {
+    display: block;
+    position: absolute;
+    transform: translate(250px, 402px);
+  }
+  .e_8 {
+    display: block;
+    position: absolute;
+    transform: translate(240px, 428px);
+  }
+  .e_9 {
+    display: block;
+    position: absolute;
+    transform: translate(195px, 535px);
+  }
+  .e_10 {
+    display: block;
+    position: absolute;
+    transform: translate(203px, 500px);
+  }
+  .s_8 {
+    display: block;
+    position: absolute;
+    transform: translate(140px, 561px);
+  }
+  .m_1 {
+    display: block;
+    position: absolute;
+    transform: translate(246px, 251px);
+  }
+  .m_2 {
+    display: block;
+    position: absolute;
+    transform: translate(248px, 266px);
+  }
+  .m_3 {
+    display: block;
+    position: absolute;
+    transform: translate(100px, 259px);
+  }
+  .m_4 {
+    display: block;
+    position: absolute;
+    transform: translate(84px, 281px);
+  }
+  .m_5 {
+    display: block;
+    position: absolute;
+    transform: translate(100px, 306px);
+  }
+  .m_6 {
+    display: block;
+    position: absolute;
+    transform: translate(233px, 280px);
+  }
+  .m_7 {
+    display: block;
+    position: absolute;
+    transform: translate(220px, 305px);
+  }
+  .m_8 {
+    display: block;
+    position: absolute;
+    transform: translate(120px, 336px);
+  }
+  .m_9 {
+    display: block;
+    position: absolute;
+    transform: translate(132px, 360px);
+  }
+  .m_10 {
+    display: block;
+    position: absolute;
+    transform: translate(140px, 381px);
+  }
+  .m_11 {
+    display: block;
+    position: absolute;
+    transform: translate(200px, 388px);
+  }
+  .m_12 {
+    display: block;
+    position: absolute;
+    transform: translate(101px, 415px);
+  }
+
+  div.level_page_flexbox svg {
+    margin-top: 80px;
+    margin-left: -80px;
+    /* max-width: 100%; */
+    z-index: -1;
+    position: absolute;
+  }
+
+  .select {
+    position: relative;
+    min-width: 100px;
+    margin-right: 2%;
+  }
+  .select select {
+    margin-top: 5%;
+    -webkit-appearance: none;
+    padding: 3px 32px 6px 12px;
+    width: 92%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #add8e6;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+  }
+
+  div.navbar {
+    display: block;
+  }
+
+  .btn-info {
+    position: absolute;
+    z-index: 20;
+    transform: translate(60px, 100px);
+    /* transform: translateY(200px); */
+  }
+  .level_page_flexbox {
+    display: block;
+  }
+
+  path {
+    stroke: rgba(21, 49, 36, 0.445);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  /* path:hover {
+        fill: #B99362;
+        transform: translate(-5px, -5px);
+    } */
+
+  .mountain_box {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 40px 38px;
+    position: absolute;
+    z-index: 30;
+  }
+  .close {
+    display: block;
+    fill: black;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .mountain_name {
+    margin: 5px auto;
+    width: 83%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  .main_mountain {
+    font-size: 23px;
+    font-weight: 300;
+  }
+  .other_mountain {
+    display: flex;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+  .other_mountain_1 {
+    margin: 0 3px;
+  }
+  .other_mountain_2 {
+    margin: 0 3px;
+  }
+  .other_mountain_3 {
+    margin: 0 3px;
+  }
+  .m_img_container {
+    margin: 0 auto;
+    width: 250px;
+    height: 150px;
+  }
+  .m_img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mountain_info_text {
+    margin: 30px auto;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 80%;
+    height: 200px;
+    word-break: break-all;
+  }
+  .info_border {
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .box {
+    margin: 3px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-primary {
+    display: block;
+    margin: 1rem auto;
+    background-color: #f0a520;
+    color: #424642;
+    border-style: none;
+    padding: 0.7rem 1.6rem 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+  }
+  .equ_img_four {
+    margin-left: 10%;
+    margin: 0 auto;
+  }
+  .equ_img_two {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .equ_img {
+    flex: 0 1 45%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .equ_img img {
+    width: 50%;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 2px solid #f0a520;
+  }
+  .level_light_box {
+    position: absolute;
+    z-index: 1001;
+    display: none;
+    border-radius: 10px;
+    margin: 15px 35px;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .level_info_title {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 20px auto;
+    text-align: center;
+    color: #f0a500;
+    font-size: 23px;
+  }
+  .season_title {
+    font-weight: 600;
+  }
+
+  .info-text {
+    font-size: 16px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .info-text span {
+    font-weight: 600;
+  }
+  .level-line {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  .card1 {
+    display: block;
+  }
+
+  .card2 {
+    display: none;
+    height: 785px;
+  }
+  .card3 {
+    display: none;
+    height: 785px;
+  }
+}
+
+/* ------------ taiwan-map ---------------- */
+/* ---------------mobile---------------------- */
+
+/* ----------------weather---------------- */
+@media screen and (min-width: 961px) and (max-width: 2800px) {
+  .spaceA {
+    width: 10px;
+    height: 5px;
+  }
+  .dropdown {
+    width: 186px;
+    margin: 0px 150px 0px 230px;
+    position: relative;
+  }
+
+  .dropdown p {
+    text-align: center;
+    font-size: 17px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #a9c9e200;
+    background: #ffffffa1 no-repeat right 4px;
+    color: #083522;
+    cursor: pointer;
+  }
+
+  .dropdown ul {
+    width: 184px;
+    background: #ffffffd2;
+    margin-top: -1px;
+    border: 1px solid #a9c9e200;
+    position: absolute;
+    display: none;
+  }
+
+  .dropdown ul li {
+    height: 34px;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    border-bottom: 0.2px solid rgba(211, 211, 211, 0.685);
+  }
+
+  .dropdown ul li a {
+    display: block;
+    height: 24px;
+    color: #3c3d3d;
+    text-decoration: none;
+  }
+
+  .dropdown ul li a:hover {
+    background: #babfc886;
+    color: #369;
+  }
+
+  .dropdown-box {
+    display: flex;
+    /* align-items: center;
+        justify-content: center; */
+  }
+
+  .north {
+    font-size: 10px;
+  }
+
+  .n_1 {
+    display: block;
+    position: absolute;
+    transform: translate(640px, 192px);
+  }
+
+  .n_2 {
+    display: block;
+    position: absolute;
+    transform: translate(661px, 218px);
+  }
+
+  .n_3 {
+    display: block;
+    position: absolute;
+    transform: translate(640px, 251px);
+  }
+
+  .n_4 {
+    display: block;
+    position: absolute;
+    transform: translate(589px, 260px);
+  }
+  .n_5 {
+    position: absolute;
+    display: block;
+    transform: translate(762px, 226px);
+    /* pointer-events: block; */
+  }
+  .n_6 {
+    position: absolute;
+    display: block;
+    transform: translate(582px, 226px);
+    /* pointer-events: block; */
+  }
+  .north img {
+    width: 10px;
+    height: 20px;
+  }
+  .e_1 {
+    position: absolute;
+    display: block;
+    transform: translate(770px, 298px);
+  }
+  .e_2 {
+    display: block;
+    position: absolute;
+    transform: translate(771px, 322px);
+  }
+  .e_3 {
+    display: block;
+    position: absolute;
+    transform: translate(760px, 350px);
+  }
+  .e_4 {
+    display: block;
+    position: absolute;
+    transform: translate(746px, 378px);
+  }
+  .e_5 {
+    display: block;
+    position: absolute;
+    transform: translate(743px, 412px);
+  }
+  .e_6 {
+    display: block;
+    position: absolute;
+    transform: translate(737px, 451px);
+  }
+  .e_7 {
+    display: block;
+    position: absolute;
+    transform: translate(708px, 475px);
+  }
+  .e_8 {
+    display: block;
+    position: absolute;
+    transform: translate(713px, 503px);
+  }
+  .e_9 {
+    display: block;
+    position: absolute;
+    transform: translate(667px, 582px);
+  }
+  .e_10 {
+    display: block;
+    position: absolute;
+    transform: translate(688px, 556px);
+  }
+  .s_8 {
+    display: block;
+    position: absolute;
+    transform: translate(584px, 642px);
+  }
+  .m_1 {
+    display: block;
+    position: absolute;
+    transform: translate(722px, 277px);
+  }
+  .m_2 {
+    display: block;
+    position: absolute;
+    transform: translate(716px, 296px);
+  }
+  .m_3 {
+    display: block;
+    position: absolute;
+    transform: translate(574px, 289px);
+  }
+  .m_4 {
+    display: block;
+    position: absolute;
+    transform: translate(541px, 309px);
+  }
+  .m_5 {
+    display: block;
+    position: absolute;
+    transform: translate(548px, 334px);
+  }
+  .m_6 {
+    display: block;
+    position: absolute;
+    transform: translate(701px, 308px);
+  }
+  .m_7 {
+    display: block;
+    position: absolute;
+    transform: translate(687px, 344px);
+  }
+  .m_8 {
+    display: block;
+    position: absolute;
+    transform: translate(602px, 366px);
+  }
+  .m_9 {
+    display: block;
+    position: absolute;
+    transform: translate(591px, 393px);
+  }
+  .m_10 {
+    display: block;
+    position: absolute;
+    transform: translate(595px, 430px);
+  }
+  .m_11 {
+    display: block;
+    position: absolute;
+    transform: translate(659px, 448px);
+  }
+  .m_12 {
+    display: block;
+    position: absolute;
+    transform: translate(510px, 485px);
+  }
+
+  /* -------------body----------------------------------     */
+
+  div.navbar {
+    display: block;
+  }
+
+  .btn-info {
+    position: absolute;
+    z-index: -1;
+    transform: translate(60px, 100px);
+    /* transform: translateY(200px); */
+  }
+  .level_page_flexbox {
+    display: block;
+  }
+  div.level_page_flexbox svg {
+    width: 100%;
+    /* z-index: -1;
+    position: fixed; */
+    /* height: 100vh; */
+  }
+
+  path {
+    stroke: rgb(148, 163, 156);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  /* path:hover {
+    fill: #B99362;
+    transform: translate(-5px, -5px);
+} */
+
+  .mountain_box {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 80%;
+    /* height: 100vh; */
+    margin: 40px auto;
+  }
+  .close {
+    display: block;
+    fill: black;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .mountain_name {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .main_mountain {
+    font-size: 23px;
+    font-weight: 300;
+  }
+  .other_mountain {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+  .m_img_container {
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+  }
+  .m_img_container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .mountain_info_text {
+    line-height: 1.5;
+    margin: 5px auto;
+    font-size: 10px;
+    font-weight: 400;
+    width: 80%;
+    height: 230px;
+    word-break: break-all;
+  }
+  .info_border {
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .box {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 40%;
+    background-color: #f0a520;
+    color: #424642;
+    border-style: none;
+  }
+  /* .equ_img_four{
+    margin: 0 20px;
+} */
+  .equ_img_two {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .equ_img {
+    width: 110px;
+    height: 80px;
+  }
+  .equ_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .equ_img:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+  }
+  .equ_img:active {
+    transform: scale(0.8);
+    transition: 0.6s;
+  }
+
+  /* .circle{
+    border-radius:50% ;
+    border: 2px solid #F0A520;
+} */
+  .level_light_box {
+    display: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .level_info_title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 20px auto;
+    text-align: center;
+    color: #f0a500;
+    font-size: 23px;
+  }
+  .season_title {
+    font-weight: 600;
+  }
+
+  .info-text {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .level-line {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  body {
+    font-size: 23px;
+  }
+  .btn-info {
+    position: absolute;
+    z-index: 3;
+    transform: translate(235px, 200px);
+  }
+  div.level_page_flexbox svg {
+    /* margin-top: 30px; */
+    margin-left: 16%;
+    width: 30%;
+  }
+
+  .level_page_flexbox {
+    display: flex;
+  }
+  .mountain_box {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 30%;
+    /* height: 100vh; */
+    margin: 40px auto;
+  }
+  .main_mountain {
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 53px;
+  }
+  .other_mountain {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    font-size: 23px;
+    line-height: 53px;
+    font-weight: 300;
+  }
+
+  .m_img_container {
+    margin: 0 auto;
+    width: 80%;
+    height: 320px;
+  }
+  .m_img_container img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+  }
+  .equ_img img {
+    width: 80%;
+  }
+
+  .equ_img_four {
+    display: flex;
+    margin: 0 1.5rem;
+  }
+  .close {
+    display: none;
+  }
+
+  .mountain_info_text {
+    margin: 2% auto;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    height: 160px;
+    word-break: break-all;
+  }
+  .close_level {
+    display: block;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    display: block;
+  }
+  .level_light_box {
+    position: absolute;
+    z-index: 5;
+    top: 200px;
+    left: 150px;
+    display: none;
+    border-radius: 10px;
+    /* margin: 100px 200px; */
+    width: 40%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 19px;
+    line-height: 35px;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+  .level_info_title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 20px auto;
+    text-align: center;
+    color: #f0a500;
+    font-size: 33px;
+  }
+  .season_title {
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  .info-text {
+    /* padding-bottom: 30px; */
+    margin: 0 auto;
+    width: 80%;
+  }
+  .level-line {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  .card1 {
+    display: block;
+    height: 795px;
+  }
+
+  .card2 {
+    display: none;
+    height: 795px;
+  }
+  .card3 {
+    display: none;
+    height: 795px;
+  }
+}
+
+/* -----------mobile---------------- */

@@ -1,0 +1,1445 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/* 色票設定 */
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #cf7500;
+  --third-color: #424642;
+  --fourth-color: #123132;
+  --fifth-color: #9a9a9a;
+  --sixth-color: #1f1f1f;
+  --seventh-color: #ff91005d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* a超連結樣式設定 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* li樣式去掉前面圖案設定 */
+li {
+  list-style-type: none;
+}
+
+/* <p>標籤設定歸零 */
+p {
+  margin: 0.3rem 0;
+  padding: 0;
+}
+
+/* <ul>標籤預設padding歸零 */
+ul {
+  padding: 0;
+}
+
+/* Carousel套件樣式設定 */
+.flickity-viewport {
+  cursor: default !important;
+}
+
+/* 預設中文字體 */
+.ff-noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 預設英文字體 */
+.ff-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.ff-airbnb {
+  font-family: "Airbnb Cereal App";
+}
+
+/* svg尺寸 class設定 */
+.svg {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+/* navbar 專屬logo-svg設定 */
+.navbar-logo-svg {
+  width: 5rem;
+  height: 3rem;
+}
+
+/* flex class設定 */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* 上下左右margin class設定 */
+.mt-3 {
+  margin-top: 3rem !important;
+}
+.mt-4 {
+  margin-top: 4rem !important;
+}
+.ml-6 {
+  margin-left: 6.7rem !important;
+}
+.mr-2 {
+  margin-right: 2rem !important;
+}
+
+/* display: none class設定 */
+.none {
+  display: none;
+}
+
+/* icon-heart點擊後變紅 */
+.icon-heart.open {
+  fill: rgb(219, 71, 71) !important;
+  stroke: rgb(219, 71, 71) !important;
+}
+
+/* --------------------Side-navbar------------------- */
+
+div.side-navbar {
+  background-color: var(--fourth-color);
+  position: fixed;
+  z-index: 998;
+  width: 90px;
+  border-radius: 0 3rem 3rem 0;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  padding-top: 1.5%;
+  text-align: center;
+}
+
+div.side-navbar img {
+  width: 100%;
+}
+
+div.side-navbar svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+div.side-navbar div.outer-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.side-navbar-flex {
+  flex-direction: column;
+  align-content: center;
+}
+
+div.side-navbar div.homepage-container {
+  height: 445px;
+  overflow: hidden;
+}
+
+div.side-navbar div.navbar-item {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  transition: 0.5s;
+}
+
+div.side-navbar div.navbar-item:hover {
+  transform: scale(1.1);
+}
+
+div.side-navbar div.navbar-item p.text {
+  color: white;
+  font-size: 0.8rem;
+}
+
+div.side-navbar div.icon-arrow-down {
+  cursor: pointer;
+  transition: 0.5s;
+  fill: white;
+}
+
+div.side-navbar div.icon-arrow-up:hover {
+  transform: translateY(-10px);
+}
+
+div.side-navbar div.icon-arrow-down:hover {
+  transform: translateY(10px);
+}
+
+div.side-navbar div.icon-arrow-down.hide {
+  transform: translateY(10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-down.show {
+  transform: translateY(-10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up.hide {
+  transform: translateY(-10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-up.show {
+  transform: translateY(10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up {
+  fill: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+div.side-navbar div.side-navbar-item {
+  transition: 0.5s;
+  transform: translateY(-49%);
+}
+
+div.side-navbar div.side-navbar-item.slide-down {
+  transform: translateY(2.5%);
+}
+
+div.side-navbar div.side-navbar-item.slide-up {
+  transform: translateY(-49%);
+}
+
+/* --------------------Navbar-mobile------------------------ */
+
+div.module-navbar {
+  background-color: var(--fourth-color);
+  padding: 0 0.5rem;
+}
+
+div.module-navbar div.navbar-left {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.module-navbar div.navbar-left img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+div.navbar-right div.hamburger {
+  position: relative;
+  z-index: 998;
+  display: flex;
+  transition: 0.2s ease-in-out 0.8s;
+}
+.hamburger #check {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 90000;
+  cursor: pointer;
+  opacity: 0;
+}
+.hamburger #check:checked ~ .hamburger-menu-container .hamburger-menu div {
+  background-color: transparent;
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:before {
+  transform: translateY(0) rotate(-45deg);
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:after {
+  transform: translateY(0) rotate(45deg);
+}
+.hamburger .hamburger-menu-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hamburger .hamburger-menu-container .hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative;
+  z-index: 1001;
+  transition: 0.5s;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:before,
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.hamburger .hamburger-menu-container .hamburger-menu div:before {
+  transform: translateY(-8px);
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  transform: translateY(8px);
+}
+
+nav.menu-btn {
+  right: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  right: -100%;
+  top: 0;
+  background-color: white;
+  height: 200vh;
+  padding: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+nav li {
+  margin-bottom: 1.5rem;
+}
+
+nav p {
+  font-size: 1.2rem;
+  color: var(--fourth-color);
+  font-weight: 500;
+}
+
+nav .icon-arrow-forward {
+  fill: var(--fourth-color);
+  width: 1rem;
+}
+
+nav .icon-nomad-logo path {
+  fill: var(--fourth-color);
+}
+
+div.module-navbar svg.icon-cart {
+  stroke: white;
+  fill: none;
+}
+
+nav p.text {
+  letter-spacing: 2px;
+  line-height: 1.7;
+  color: var(--fourth-color);
+  margin-bottom: 3rem;
+}
+
+nav div.btns {
+  justify-content: flex-start;
+}
+
+nav div.logout-btn,
+div.login-btn {
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav div.signup-btn {
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+}
+
+nav div.logout-btn,
+div.login-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav div.signup-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+nav div.user-account {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+nav div.user-account img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav p.userName {
+  display: inline-block;
+  color: var(--fourth-color);
+  margin-bottom: 3rem;
+  vertical-align: middle;
+}
+
+nav p.logout {
+  margin: 2rem 0;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--fifth-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--fifth-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav p.logout:active {
+  transform: scale(0.95);
+}
+
+.module-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+
+.module-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ----------------------progress-bar-section----------------------- */
+
+section.progress-bar-section ul.progress-bar {
+  padding: 3% 8%;
+}
+
+section.progress-bar-section ul.progress-bar p {
+  display: none;
+}
+
+section.progress-bar-section ul.progress-bar li.dots:first-child p.title {
+  background-color: var(--third-color);
+}
+
+section.progress-bar-section ul.progress-bar li.dots div.outer-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.progress-bar-section
+  ul.progress-bar
+  li.dots:first-child
+  div.outer-circle {
+  background-color: var(--third-color);
+}
+
+section.progress-bar-section
+  ul.progress-bar
+  li.dots
+  div.outer-circle
+  div.inner-circle {
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+section.progress-bar-section
+  ul.progress-bar
+  li.dots
+  div.outer-circle
+  div.inner-circle
+  div.line {
+  position: absolute;
+  border: 1px solid #bbbbbb;
+  width: 70px;
+  z-index: -20;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* -----------------------noItem-mobile------------------------------------ */
+
+div.noItem {
+  margin: 40vh auto;
+  width: 90%;
+  transform: translateY(-50%);
+  background-color: rgb(255, 237, 133);
+  border-radius: 0.5rem;
+  border: 1.5px solid white;
+  padding: 1.5rem;
+}
+
+div.noItem p.text {
+  color: var(--third-color);
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* -----------------------shopping-cart-section-mobile--------------------- */
+
+section.shopping-cart-section div.container {
+  padding: 1rem 1rem;
+}
+
+section.shopping-cart-section div.shopping-cart {
+  position: relative;
+}
+
+section.shopping-cart-section div.shopping-cart h2.text {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--sixth-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+section.shopping-cart-section div.shopping-cart span.line {
+  display: inline-block;
+  width: 25px;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
+}
+
+section.shopping-cart-section div.itemBox {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+section.shopping-cart-section div.left {
+  flex: 1 1 50%;
+}
+
+section.shopping-cart-section div.left-1 {
+  align-items: flex-start;
+}
+
+section.shopping-cart-section div.schedule-image {
+  width: 90px;
+  height: 70px;
+  margin-right: 1rem;
+}
+
+section.shopping-cart-section div.product-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+}
+
+section.shopping-cart-section div.schedule-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  vertical-align: middle;
+}
+
+section.shopping-cart-section div.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.3rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: white;
+}
+
+section.shopping-cart-section div.left-1-2 {
+  width: 200px;
+}
+
+section.shopping-cart-section div.w150 {
+  width: 150px;
+}
+
+section.shopping-cart-section div.left-1-2 p.title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--sixth-color);
+}
+
+section.shopping-cart-section div.left-1-2 p.text {
+  color: var(--third-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+section.shopping-cart-section div.left-1-2 p.product-name {
+  font-size: 0.8rem;
+}
+
+section.shopping-cart-section div.left-2 {
+  margin-left: 6.7rem;
+}
+
+section.shopping-cart-section div.left-2 p.num {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+section.shopping-cart-section div.left-2 p.minus,
+section.shopping-cart-section div.left-2 p.add {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--third-color);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-top: 0.15rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+section.shopping-cart-section div.left-2 p.minus.open {
+  background-color: var(--fifth-color) !important;
+}
+
+p.minus:active,
+p.add:active {
+  transform: scale(0.9);
+}
+
+section.shopping-cart-section div.left-2 svg {
+  display: inline-block;
+  fill: white;
+  width: 1rem;
+  height: 1rem;
+}
+
+section.shopping-cart-section div.left-3 {
+  width: 110px;
+  text-align: right;
+}
+
+section.shopping-cart-section div.left-3 span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+section.shopping-cart-section div.right {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: auto;
+}
+
+section.shopping-cart-section div.right:active {
+  transform: scale(0.9);
+}
+
+section.shopping-cart-section div.right svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: var(--third-color);
+}
+
+section.shopping-cart-section div.total {
+  width: 100%;
+  text-align: right;
+  padding: 3rem 0 1rem 0;
+  border-bottom: 1.5px solid #cccccc;
+}
+
+section.shopping-cart-section div.total p.text {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+section.shopping-cart-section div.total p.ff-noto {
+  color: var(--sixth-color);
+}
+
+section.shopping-cart-section div.checkout-cta {
+  width: fit-content;
+  padding-top: 2rem;
+  position: absolute;
+  left: 62%;
+}
+
+section.shopping-cart-section div.checkout-cta:active {
+  transform: scale(0.9);
+}
+
+section.shopping-cart-section div.checkout-cta p.text {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  padding: 0.7rem 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* ----------------------footer-section-mobile----------------------- */
+
+section.footer-section {
+  display: none;
+}
+
+/* ----------------spaceForFixed-mobile------------------------- */
+
+div.spaceForFixed-mobile {
+  height: 160px;
+}
+
+/* ---------------------fixed-section-mobile------------------------- */
+
+section.fixed-section {
+  background-color: white;
+  padding: 0.7rem 0.5rem;
+  position: fixed;
+  z-index: 998;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+section.fixed-section div.homepage-container {
+  justify-content: space-around;
+}
+
+section.fixed-functions {
+  width: 23%;
+  vertical-align: middle;
+}
+
+section.fixed-section svg {
+  fill: var(--fourth-color);
+  vertical-align: middle;
+}
+
+section.fixed-section svg.icon-cart {
+  stroke: var(--fourth-color);
+  fill: none;
+}
+
+section.fixed-section span.nav-badge {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* -----------------------delete-item-modal-mobile--------------------- */
+
+div.delete-item-modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.25s;
+}
+
+div.delete-item-modal.open {
+  display: block;
+  pointer-events: all;
+}
+
+div.delete-item-modal div.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.delete-warning-card {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  transition: all 0.25s ease-out;
+}
+
+div.delete-warning-card svg {
+  text-align: right;
+  width: 1rem;
+  height: 1rem;
+}
+
+div.delete-warning-card p.text {
+  margin: 0 auto;
+  color: var(--sixth-color);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-align: center;
+  font-weight: 500;
+}
+
+div.delete-warning-card div.btns {
+  justify-content: space-around;
+  padding-top: 1.5rem;
+}
+
+div.delete-warning-card div.btns p.cancel-btn {
+  text-align: center;
+  width: 30%;
+  color: white;
+  padding: 0.3rem 1.1rem 0.4rem 1.1rem;
+  background-color: var(--fourth-color);
+  border-radius: 0.4rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+div.delete-warning-card div.btns p.confirm-btn {
+  text-align: center;
+  width: 30%;
+  color: white;
+  padding: 0.3rem 1.1rem 0.4rem 1.1rem;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+div.delete-warning-card div.btns p.cancel-btn:active,
+div.delete-warning-card div.btns p.confirm-btn:active {
+  transform: scale(0.9);
+}
+
+/* ----------------------------notice-modal-mobile------------------------ */
+
+div.notice-modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.25s;
+}
+
+div.notice-modal.open {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+div.notice-modal div.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.notice-modal div.notice-card {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  transition: all 0.25s ease-out;
+}
+
+div.notice-modal svg {
+  text-align: right;
+  width: 1rem;
+  height: 1rem;
+}
+
+div.notice-modal p.text {
+  margin: 2rem auto;
+  color: var(--sixth-color);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 500;
+}
+
+div.notice-modal p.confirm-btn {
+  margin: 2rem auto;
+  text-align: center;
+  width: 40%;
+  color: white;
+  padding: 0.5rem 1.6rem 0.6rem 1.6rem;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+div.notice-modal p.confirm-btn:active {
+  transform: scale(0.9);
+}
+
+@media only screen and (min-width: 1420px) {
+  body {
+    background-color: #f4f4f4;
+  }
+  /* --------------------------side-navbar-desktop------------------------ */
+
+  div.side-navbar {
+    display: block;
+  }
+
+  /* --------------------------Navbar-desktop----------------------------- */
+
+  div.module-navbar {
+    background-color: var(--fourth-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.356);
+  }
+
+  div.module-navbar div.navbar-left {
+    width: 120px;
+    height: 50px;
+  }
+
+  div.module-navbar div.navbar-right {
+    justify-content: center;
+  }
+
+  div.module-navbar div.navbar-right div.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  div.module-navbar div.navbar-right div.cart svg.icon-cart:hover {
+    transform: rotate(-15deg);
+  }
+
+  div.module-navbar div.navbar-right span.nav-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    background-color: var(--primary-color);
+  }
+
+  div.module-navbar div.navbar-right div.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.module-navbar div.left-box {
+    width: 50px;
+    position: relative;
+  }
+
+  div.module-navbar div.left-box div.user-account {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box div.user-account:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.user-account img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user {
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: white;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box.open {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box {
+    position: absolute;
+    top: 110%;
+    left: -150px;
+    width: 200px;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1.5px solid #cccccc;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li {
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    text-align: center;
+    transition: 0.5s;
+    text-align: left;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li svg {
+    width: 1.2rem;
+    margin-right: 1rem;
+    fill: var(--third-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li span {
+    display: inline-block;
+    color: var(--sixth-color);
+    vertical-align: middle;
+    transition: 0.5s;
+    font-size: 0.9rem;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li p.text {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    text-align: center;
+    width: fit-content;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.5s;
+    border: 2px solid var(--primary-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:not(li.logout):hover {
+    background-color: #f4f4f4;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover > span.text {
+    transform: scale(1.1);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover p.text {
+    background-color: white;
+    color: var(--primary-color);
+  }
+
+  div.module-navbar div.left-box img {
+    width: 100%;
+  }
+
+  div.module-navbar div.right-box p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  div.module-navbar div.hamburger {
+    display: none;
+  }
+
+  /* ----------------------progress-bar-section-desktop---------------------- */
+
+  section.progress-bar-section ul.progress-bar {
+    padding: 3% 15%;
+  }
+
+  section.progress-bar-section ul.progress-bar p.title {
+    display: block;
+    position: relative;
+    padding: 1rem 1.7rem;
+    background-color: #bbbbbb;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.8rem;
+  }
+
+  section.progress-bar-section ul.progress-bar li.dots:first-child p.title {
+    background-color: var(--third-color);
+  }
+
+  section.progress-bar-section ul.progress-bar p.title svg.icon-play {
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translate(-50%) rotate(90deg);
+    fill: #bbbbbb;
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots:first-child
+    svg.icon-play {
+    fill: var(--third-color);
+  }
+
+  section.progress-bar-section ul.progress-bar li.dots div.outer-circle {
+    width: 3rem;
+    height: 3rem;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots:first-child
+    div.outer-circle {
+    background-color: var(--third-color);
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots
+    div.outer-circle
+    div.inner-circle {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 24px;
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots
+    div.outer-circle
+    div.inner-circle
+    div.line {
+    position: absolute;
+    border: 1px solid #bbbbbb;
+    width: 265px;
+    z-index: -20;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots:nth-child(2)
+    div.outer-circle
+    div.inner-circle
+    div.line {
+    width: 330px;
+  }
+
+  section.progress-bar-section
+    ul.progress-bar
+    li.dots:nth-child(3)
+    div.outer-circle
+    div.inner-circle
+    div.line {
+    width: 310px;
+  }
+
+  /* -----------------------noItem-desktop-------------------------*/
+
+  div.noItem {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    border-radius: 2rem;
+    line-height: 10px;
+  }
+
+  div.noItem p.text {
+    margin: 0 auto;
+  }
+
+  /* -----------------------shopping-cart-section-desktop--------------------- */
+
+  section.shopping-cart-section div.container {
+    padding: 1rem 25%;
+  }
+
+  section.shopping-cart-section div.shopping-cart {
+    padding: 2rem 2rem 7.5rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  section.shopping-cart-section div.align {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  section.shopping-cart-section div.align span.line {
+    width: 45.5%;
+  }
+
+  section.shopping-cart-section div.align span.line2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45.5%;
+    border: 1px solid #cccccc;
+  }
+
+  section.shopping-cart-section div.shopping-cart div.align h2.text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0.6rem;
+  }
+
+  section.shopping-cart-section div.itemBox {
+    margin-bottom: 2rem;
+  }
+
+  section.shopping-cart-section div.left {
+    flex: 0 1 90%;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  section.shopping-cart-section div.left-1-1 {
+    width: 180px;
+    height: 100px;
+  }
+
+  section.shopping-cart-section div.product-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  section.shopping-cart-section div.left-1-2 {
+    width: 270px;
+  }
+
+  section.shopping-cart-section div.w300 {
+    width: 330px;
+  }
+
+  section.shopping-cart-section div.left-1-2 p.title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  section.shopping-cart-section div.left-1-2 p.date {
+    width: 250px;
+  }
+
+  section.shopping-cart-section div.left-1-2 p.text {
+    color: var(--fifth-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  section.shopping-cart-section div.left-2 {
+    margin-left: 0 !important;
+  }
+
+  section.shopping-cart-section div.left-2 p.num {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+
+  section.shopping-cart-section div.left-2 p.minus,
+  section.shopping-cart-section div.left-2 p.add {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 0.28rem;
+  }
+
+  section.shopping-cart-section div.left-2 svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  section.shopping-cart-section div.left-3 {
+    width: 130px;
+  }
+
+  section.shopping-cart-section div.left-3 span {
+    font-size: 1.2rem;
+  }
+
+  section.shopping-cart-section div.right {
+    flex: 0 1 10%;
+    margin: auto 0;
+  }
+
+  section.shopping-cart-section div.right svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  section.shopping-cart-section div.total {
+    padding: 5rem 0 2rem 0;
+  }
+
+  section.shopping-cart-section div.total p.text {
+    font-size: 1.5rem;
+  }
+
+  section.shopping-cart-section div.checkout-cta {
+    left: 83%;
+  }
+
+  section.shopping-cart-section div.checkout-cta p.text {
+    padding: 0.8rem 2rem;
+  }
+
+  /* --------------------------delete-item-modal-desktop------------------------- */
+
+  div.delete-warning-card {
+    width: 400px;
+    height: 250px;
+    padding: 1.5rem;
+  }
+
+  div.delete-warning-card svg {
+    display: inline-block;
+    margin: 0;
+    margin-left: auto;
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--sixth-color);
+    cursor: pointer;
+  }
+
+  div.delete-warning-card svg:active {
+    transform: scale(0.9);
+  }
+
+  div.delete-warning-card div.flex {
+    margin-bottom: 1rem;
+  }
+
+  div.delete-warning-card p.text {
+    font-size: 1.4rem;
+  }
+
+  div.delete-warning-card div.btns p.cancel-btn {
+    padding: 0.5rem 1.5rem 0.6rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  div.delete-warning-card div.btns p.confirm-btn {
+    padding: 0.5rem 1.5rem 0.6rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* --------------------------notice-modal-desktop------------------------- */
+
+  div.notice-modal div.notice-card {
+    width: 350px;
+    height: 210px;
+  }
+
+  div.notice-modal p.confirm-btn {
+    margin: 3rem auto;
+  }
+
+  /* --------------------------footer-section-desktop--------------------- */
+
+  section.footer-section {
+    margin-top: 20rem;
+    margin-bottom: 0;
+    height: 540px;
+  }
+
+  /* -------------------------spaceForFixed-desktop------------------------- */
+
+  div.spaceForFixed-mobile {
+    display: none;
+  }
+
+  /* -----------------------fixed-section-desktop--------------------- */
+
+  section.fixed-section {
+    display: none;
+  }
+}

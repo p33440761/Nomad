@@ -1,0 +1,65 @@
+4/30 (五)
+
+● Parts資料夾 -> html.navbar更新：
+ 
+	<1> 在 Navbar-desktop 版本右上角 User 照片，新增點擊後 Dropdown 下拉式選單。
+
+	<2> 更新 mobile, desktop 版本左上角Logo照片、尺寸。
+
+	<3> 為了避免跟Bootstrap中class互相衝突，公版 .Navbar 名稱改為 .module-navbar
+
+		.container改為 .homepage-container (先前已更新過)
+
+		.modal改為 module-modal
+	
+
+● Css資料夾 -> nomadHomePage.css更新：
+
+	<1> Mobile： 新增Hamburger選單中登入、加入按鈕hover效果、變更外觀。
+
+	<2> Desktop： 新增右上角user-icon click時下拉式選單效果。
+
+		          更新.Side-navbar css設定，在1920*1024、1440*900尺寸下能夠不超出尺寸
+
+		           新增.nav-item hover時放大效果、上下箭頭hover效果。
+
+● JS資料夾 -> nomad.js更新：
+
+	<1>  為了避免跟bootstrap class命名衝突，更新變數抓取的class名稱 例如：
+		const modal = document.querySelector(".modal");
+		改為
+		const modal = document.querySelector(".module-modal");
+
+	<2> 新增desktop版本點擊User-icon滑出下拉式選單效果。
+
+●Parts資料夾 -> 不同Parts檔案新增
+
+	<1> 原先的html-navbar, html-header, html-footer_scripts三個檔案內容上有不方便的地方
+	         
+                             所以拆分成html-footer, html-fixedbar, html-scripts, html-endingtag。
+
+●icomoon 資料夾 -> svg 圖檔新增
+
+	<1> icomoon資料夾中有一個Symbol-defs.svg檔，裡面有所有目前用到的svg 路徑
+
+	        可以直接透過svg sprite方式呼叫id，既可用fill改顏色又可以省去大量路徑洗版
+
+	        只要將svg檔案用vs code打開，複製<path>路徑檔，打開symbol-defs-svg，在最下面用一樣方式新增就可以。
+	         
+	        html呼叫方式如下：
+
+	         <svg class="icon-nomad-logo">
+                                 <use xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo"></use>
+                           </svg>
+                    
+	          
+	  
+
+
+
+
+
+
+
+
+

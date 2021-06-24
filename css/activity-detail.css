@@ -1,0 +1,2186 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/* 色票設定 */
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #cf7500;
+  --third-color: #424642;
+  --fourth-color: #123132;
+  --fifth-color: #9a9a9a;
+  --sixth-color: #1f1f1f;
+  --seventh-color: #ff91005d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* a超連結樣式設定 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* li樣式去掉前面圖案設定 */
+li {
+  list-style-type: none;
+}
+
+/* <p>標籤設定歸零 */
+p {
+  margin: 0.3rem 0;
+  padding: 0;
+}
+
+/* <ul>標籤預設padding歸零 */
+ul {
+  padding: 0;
+}
+
+/* Carousel套件樣式設定 */
+.flickity-viewport {
+  cursor: default !important;
+}
+
+/* 預設中文字體 */
+.ff-noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 預設英文字體 */
+.ff-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.ff-airbnb {
+  font-family: "Airbnb Cereal App";
+}
+
+/* svg尺寸 class設定 */
+.svg {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+/* navbar 專屬logo-svg設定 */
+.navbar-logo-svg {
+  width: 5rem;
+  height: 3rem;
+}
+
+/* flex class設定 */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* 上下左右margin class設定 */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+
+/* display: none class設定 */
+.none {
+  display: none;
+}
+
+/* icon-heart點擊後變紅 */
+.icon-heart.open {
+  fill: rgb(219, 71, 71) !important;
+  stroke: rgb(219, 71, 71) !important;
+}
+
+.icon-heart:active {
+  transform: scale(0.8) !important;
+}
+
+.animate {
+  transition: transform 0.3s ease-out;
+}
+
+/* --------------------Side-navbar-mobile------------------- */
+
+div.side-navbar {
+  background-color: var(--fourth-color);
+  position: fixed;
+  z-index: 998;
+  width: 90px;
+  border-radius: 0 3rem 3rem 0;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  padding-top: 1.5%;
+  text-align: center;
+}
+
+div.side-navbar img {
+  width: 100%;
+}
+
+div.side-navbar svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+div.side-navbar div.outer-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.side-navbar-flex {
+  flex-direction: column;
+  align-content: center;
+}
+
+div.side-navbar div.homepage-container {
+  height: 445px;
+  overflow: hidden;
+}
+
+div.side-navbar div.navbar-item {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  transition: 0.5s;
+}
+
+div.side-navbar div.navbar-item:hover {
+  transform: scale(1.1);
+}
+
+div.side-navbar div.navbar-item p.text {
+  color: white;
+  font-size: 0.8rem;
+}
+
+div.side-navbar div.icon-arrow-down {
+  cursor: pointer;
+  transition: 0.5s;
+  fill: white;
+}
+
+div.side-navbar div.icon-arrow-up:hover {
+  transform: translateY(-10px);
+}
+
+div.side-navbar div.icon-arrow-down:hover {
+  transform: translateY(10px);
+}
+
+div.side-navbar div.icon-arrow-down.hide {
+  transform: translateY(10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-down.show {
+  transform: translateY(-10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up.hide {
+  transform: translateY(-10px) scale(0);
+}
+
+div.side-navbar div.icon-arrow-up.show {
+  transform: translateY(10px) scale(1);
+}
+
+div.side-navbar div.icon-arrow-up {
+  fill: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+div.side-navbar div.side-navbar-item {
+  transition: 0.5s;
+  transform: translateY(-49%);
+}
+
+div.side-navbar div.side-navbar-item.slide-down {
+  transform: translateY(2.5%);
+}
+
+div.side-navbar div.side-navbar-item.slide-up {
+  transform: translateY(-49%);
+}
+
+/* --------------------Navbar-mobile------------------------ */
+
+div.module-navbar {
+  background-color: var(--fourth-color);
+  padding: 0 0.5rem;
+}
+
+div.module-navbar div.navbar-left {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.module-navbar div.navbar-left img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+div.navbar-right div.hamburger {
+  position: relative;
+  z-index: 998;
+  display: flex;
+  transition: 0.2s ease-in-out 0.8s;
+}
+.hamburger #check {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 90000;
+  cursor: pointer;
+  opacity: 0;
+}
+.hamburger #check:checked ~ .hamburger-menu-container .hamburger-menu div {
+  background-color: transparent;
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:before {
+  transform: translateY(0) rotate(-45deg);
+}
+.hamburger
+  #check:checked
+  ~ .hamburger-menu-container
+  .hamburger-menu
+  div:after {
+  transform: translateY(0) rotate(45deg);
+}
+.hamburger .hamburger-menu-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hamburger .hamburger-menu-container .hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: relative;
+  z-index: 1001;
+  transition: 0.5s;
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:before,
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.hamburger .hamburger-menu-container .hamburger-menu div:before {
+  transform: translateY(-8px);
+}
+.hamburger .hamburger-menu-container .hamburger-menu div:after {
+  transform: translateY(8px);
+}
+
+nav.menu-btn {
+  right: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  right: -100%;
+  top: 0;
+  background-color: white;
+  height: 200vh;
+  padding: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+nav li {
+  margin-bottom: 1.5rem;
+}
+
+nav p {
+  font-size: 1.2rem;
+  color: var(--fourth-color);
+  font-weight: 500;
+}
+
+nav .icon-arrow-forward {
+  fill: var(--fourth-color);
+  width: 1rem;
+}
+
+nav .icon-nomad-logo path {
+  fill: var(--fourth-color);
+}
+
+div.module-navbar svg.icon-cart {
+  stroke: white;
+  fill: none;
+}
+
+nav p.text {
+  letter-spacing: 2px;
+  line-height: 1.7;
+  color: var(--fourth-color);
+  margin-bottom: 3rem;
+}
+
+nav div.btns {
+  justify-content: flex-start;
+}
+
+nav div.logout-btn,
+div.login-btn {
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav div.signup-btn {
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 1rem;
+  width: 80px;
+  text-align: center;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+}
+
+nav div.logout-btn,
+div.login-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav div.signup-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+nav div.user-account {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+nav div.user-account img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav p.userName {
+  display: inline-block;
+  color: var(--fourth-color);
+  margin-bottom: 3rem;
+  vertical-align: middle;
+}
+
+nav p.logout {
+  margin: 2rem 0;
+  width: 80px;
+  text-align: center;
+  background-color: white;
+  color: var(--fifth-color);
+  border-radius: 2.5rem;
+  border: 2px solid var(--fifth-color);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+nav p.logout:active {
+  transform: scale(0.95);
+}
+
+.module-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+
+.module-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+/* ---------------------hero-section-mobile-------------------------- */
+
+section.hero-section div.hero-section-image-desktop {
+  display: none;
+}
+
+/*-------------------activity-detail-section-mobile------------------------ */
+
+section.activity-detail-section div.activity-detail-section-image {
+  position: relative;
+  background-image: url(../images/Nan_hu_mountain.jpg);
+  height: 275px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.activity-detail-section div.activity-detail-section-image p.text-image {
+  position: absolute;
+  top: 10%;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: rgba(126, 126, 126, 0.473);
+  cursor: pointer;
+}
+
+section.activity-detail-section div.activity-detail-section-image p.text-price {
+  position: absolute;
+  right: 0;
+  top: 75%;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: rgba(126, 126, 126, 0.473);
+}
+
+section.activity-detail-section div.container {
+  padding: 1rem 1.5rem;
+}
+
+section.activity-detail-section div.floor-1 p.text {
+  font-size: 1.5rem;
+  color: var(--sixth-color);
+}
+
+section.activity-detail-section div.floor-1 svg.icon-heart {
+  width: 1.5rem;
+  stroke: var(--sixth-color);
+  fill: none;
+  stroke-width: 2px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+section.activity-detail-section div.floor-2 {
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--seventh-color);
+}
+
+section.activity-detail-section div.floor-2 div.floor-2-1 {
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+section.activity-detail-section div.floor-2 div.floor-2-1 span {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+section.activity-detail-section div.floor-2 div.floor-2-1 svg.icon-star {
+  width: 1rem;
+  fill: var(--primary-color);
+}
+
+section.activity-detail-section div.floor-2 div.floor-2-1 span.ff-noto {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+section.activity-detail-section div.floor-2 div.floor-2-1 span.ff-airbnb {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section.activity-detail-section div.floor-2 div.floors {
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+section.activity-detail-section div.floor-2 div.floors span.ff-noto {
+  font-size: 0.8rem;
+}
+
+section.activity-detail-section div.floor-2 div.floors svg {
+  width: 1rem;
+}
+
+section.activity-detail-section div.floor-2 div.floors span {
+  vertical-align: middle;
+}
+
+/* ---------------------mountain-intro-section-mobile------------------------- */
+
+section.mountain-intro-section div.container {
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  border-bottom: 1.5px solid var(--seventh-color);
+}
+
+section.mountain-intro-section h2.title {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--sixth-color);
+}
+
+section.mountain-intro-section div.mountain-intro-container {
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+section.mountain-intro-section div.mountain-intro-container ul.mountain-intro {
+  overflow: hidden;
+  height: 350px;
+  transition: all 0.25s ease-out;
+}
+
+section.mountain-intro-section
+  div.mountain-intro-container
+  ul.mountain-intro.open {
+  height: auto;
+}
+
+section.mountain-intro-section
+  div.mountain-intro-container
+  ul.mountain-intro
+  p.title {
+  color: var(--sixth-color);
+  font-size: 1.3rem;
+}
+
+section.mountain-intro-section
+  div.mountain-intro-container
+  ul.mountain-intro
+  p.text {
+  margin: 2rem 0;
+  color: var(--sixth-color);
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-indent: 2.2rem;
+}
+
+section.mountain-intro-section div.mountain-intro-container div.btn {
+  width: fit-content;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  color: white;
+  padding: 0.8rem 1.7rem 0.9rem 1.7rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+section.mountain-intro-section div.mountain-intro-container div.btn:active {
+  transform: scale(0.95);
+}
+
+/* ---------------------activity-intro-section-mobile---------------------- */
+
+section.activity-intro-section {
+  padding: 2rem 1.5rem;
+}
+
+section.activity-intro-section div.container {
+  border-bottom: 1.5px solid var(--seventh-color);
+  padding-bottom: 4rem;
+}
+
+section.activity-intro-section h2.title {
+  color: var(--sixth-color);
+  text-align: center;
+}
+
+section.activity-intro-section div.activity-daily-intro div.right {
+  width: 100%;
+  order: 1;
+  margin-top: 0.5rem;
+}
+
+section.activity-intro-section div.activity-daily-intro div.left {
+  width: 100%;
+  order: 2;
+  background-color: var(--fourth-color);
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  padding: 2.5rem;
+}
+
+section.activity-intro-section
+  div.activity-daily-intro
+  div.right
+  div.right-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.activity-intro-section
+  div.activity-daily-intro
+  div.right-bottom
+  p.text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #12313285;
+  width: 4rem;
+  height: 4rem;
+  padding: 1.5rem 0;
+  border-radius: 50%;
+  font-weight: 500;
+  cursor: pointer;
+}
+section.activity-intro-section
+  div.activity-daily-intro
+  div.right-bottom
+  p.text:active {
+  transform: scale(0.95);
+}
+
+section.activity-intro-section
+  div.activity-daily-intro
+  div.right-bottom
+  p.text.active {
+  color: white;
+  background-color: var(--fourth-color);
+}
+
+section.activity-intro-section div.activity-daily-intro div.left p.text {
+  color: white;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+/* ---------------------guide-intro-section-mobile------------------------- */
+
+section.guide-intro-section {
+  padding: 0 1.5rem;
+}
+
+section.guide-intro-section div.container {
+  border-bottom: 1.5px solid var(--seventh-color);
+  padding-bottom: 4rem;
+}
+
+section.guide-intro-section h2.title {
+  color: var(--sixth-color);
+  text-align: center;
+}
+
+section.guide-intro-section div.guides {
+  justify-content: space-around;
+}
+
+section.guide-intro-section div.guides p.text {
+  color: var(--third-color);
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.3rem 0 1.4rem 0.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+section.guide-intro-section div.guides p.text.active {
+  color: white;
+  background-color: var(--third-color);
+}
+
+section.guide-intro-section div.guides p.text:active {
+  transform: scale(0.95);
+  border: 1.5px solid var(--third-color);
+}
+
+section.guide-intro-section div.guide-intro-cards {
+  margin-top: 2rem;
+}
+
+section.guide-intro-section div.guide-intro-cards div.card {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+section.guide-intro-section
+  div.guide-intro-cards
+  div.card
+  div.guide-intro-image {
+  background-image: url(../images/Guide-Jessica.png);
+  height: 180px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+section.guide-intro-section
+  div.guide-intro-cards
+  div.card
+  div.guide-intro-image2 {
+  background-image: url(../images/Guide-Wei.jpg);
+  height: 180px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+section.guide-intro-section
+  div.guide-intro-cards
+  div.card
+  div.guide-intro-description {
+  color: var(--sixth-color);
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+section.guide-intro-section
+  div.guide-intro-cards
+  div.card
+  div.guide-intro-description
+  p.text {
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+/* ---------------------other-activity-section-mobile ----------------*/
+
+section.other-activity-section h2.title {
+  padding: 0 1.5rem;
+  margin: 4rem auto 1.5rem auto;
+  color: var(--sixth-color);
+  text-align: center;
+}
+
+section.other-activity-section div.carousel {
+  max-width: 375px;
+  height: 301px;
+  overflow: hidden;
+  position: relative;
+}
+
+section.other-activity-section div.carousel ul.wrap-img {
+  position: absolute;
+  display: flex;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  height: 254px;
+  width: 2646px;
+}
+
+section.other-activity-section div.carousel li.carousel-cell {
+  position: relative;
+  width: 270px;
+  margin-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+section.other-activity-section div.carousel li.carousel-cell svg.icon-heart {
+  position: absolute;
+  top: 3%;
+  left: 87%;
+  width: 1.7rem;
+  height: 1.7rem;
+  stroke: white;
+  stroke-width: 2px;
+  fill: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+section.other-activity-section div.carousel li.carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.301);
+}
+
+section.other-activity-section li.carousel-cell div.carousel-image {
+  height: 180px;
+  margin-bottom: 0.5rem;
+}
+
+section.other-activity-section div.carousel li.carousel-cell p.title {
+  display: inline;
+  vertical-align: middle;
+}
+
+section.other-activity-section div.carousel li.carousel-cell svg.icon-star {
+  fill: var(--primary-color);
+  width: 1rem;
+  height: 1rem;
+}
+
+section.other-activity-section div.carousel li.carousel-cell p.date {
+  vertical-align: middle;
+  margin: 0.3rem 0 0.2rem 0;
+}
+
+section.other-activity-section div.carousel li.carousel-cell span {
+  vertical-align: middle;
+}
+
+section.other-activity-section div.carousel li.carousel-cell span.price {
+  font-size: 1.1rem;
+  display: inline-block;
+  font-weight: 600;
+}
+/* ---------------------comment-section-mobile----------------------- */
+
+section.comment-section {
+  padding: 0 1.5rem;
+}
+
+section.comment-section h2.title {
+  margin-top: 4rem;
+  color: var(--sixth-color);
+  text-align: center;
+}
+
+section.comment-section div.comment-flexBox {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+section.comment-section div.comment-flexBox.open {
+  height: auto;
+  max-height: none;
+}
+
+section.comment-section div.comment-card {
+  margin-top: 2rem;
+}
+
+section.comment-section div.comment-card div.topBox {
+  justify-content: flex-start;
+}
+
+section.comment-section div.comment-card div.topBox div.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section.comment-section div.comment-card div.topBox div.user-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+
+section.comment-section div.comment-card div.topBox div.rank svg.icon-star {
+  display: inline;
+  width: 1rem;
+  height: 1rem;
+  fill: var(--primary-color);
+  vertical-align: middle;
+}
+
+section.comment-section div.comment-card div.topBox div.rank p.text {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+section.comment-section div.comment-card div.topBox div.rank span.date {
+  color: var(--fifth-color);
+  font-size: 0.9rem;
+  margin: 0;
+  vertical-align: middle;
+}
+
+section.comment-section div.comment-card div.topBox div.rank span.num {
+  font-size: 0.9rem;
+  color: var(--sixth-color);
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+section.comment-section div.comment-card div.bottomBox p.text {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  word-break: break-all;
+  color: var(--sixth-color);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-indent: 2.1rem;
+}
+
+section.comment-section div.btn {
+  width: fit-content;
+  margin: 1.5rem auto;
+  padding: 0.8rem 1.7rem 0.9rem 1.7rem;
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1.5px solid var(--primary-color-color);
+  border-radius: 0.5rem;
+}
+
+section.comment-section div.btn:active {
+  transform: scale(0.95);
+}
+
+/* ----------------------warning-section-mobile---------------------- */
+
+section.warning-section {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 0 1.5rem;
+}
+
+section.warning-section span.text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(219, 71, 71);
+}
+
+section.warning-section svg.icon-warning {
+  width: 1.5rem;
+  fill: var(--primary-color);
+}
+
+section.warning-section div.links {
+  margin-top: 3rem;
+}
+
+section.warning-section div.links div.link {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--seventh-color);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+section.warning-section div.links div.link:active {
+  background-color: #f4f4f4;
+}
+
+section.warning-section div.links div.link p.text {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--sixth-color);
+}
+
+section.warning-section div.links svg.icon-arrow_forward_ios {
+  width: 1.5rem;
+}
+
+/* ---------------------carousel-modal-mobile------------------------ */
+
+div.carousel-modal {
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+
+div.carousel-modal div.carousel-box {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.carousel-modal div.carousel-box ul.main-carousel li.carousel-cell {
+  width: 100%;
+  height: 281px;
+}
+
+div.carousel-modal div.carousel-box ul.main-carousel li.carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.carousel-modal .flickity-page-dots .dot {
+  background: white;
+}
+
+div.carousel-modal button.flickity-button {
+  display: none;
+}
+
+div.carousel-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ---------------------insurance-detail-section--------------------- */
+
+section.insurance-detail-section {
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+section.insurance-detail-section div.container {
+  padding: 0 1.5rem;
+}
+
+section.insurance-detail-section.open {
+  right: 0;
+}
+
+section.insurance-detail-section div.arrow-bar {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.075);
+}
+
+section.insurance-detail-section svg.icon-arrow_back_ios {
+  width: 1rem;
+  cursor: pointer;
+}
+
+section.insurance-detail-section h2.title {
+  color: var(--sixth-color);
+  margin-bottom: 2rem;
+}
+
+section.insurance-detail-section div.insurance-detail {
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+section.insurance-detail-section div.insurance-detail h3.title {
+  text-align: center;
+  color: var(--sixth-color);
+  font-weight: 500;
+}
+
+section.insurance-detail-section div.insurance-detail p.text {
+  text-indent: 2.2rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: var(--sixth-color);
+}
+
+section.insurance-detail-section div.backward-cta {
+  margin-top: 2rem;
+  width: 30%;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+}
+/* ---------------------spaceForFixed-mobile------------------------- */
+
+div.spaceForFixed-mobile {
+  height: 78px;
+}
+
+/* ---------------------fixed-section-mobile-------------------------- */
+
+section.fixed-section {
+  background-color: white;
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 996;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+section.fixed-section div.homepage-container {
+  padding: 0.7rem 1.5rem;
+}
+
+section.fixed-functions {
+  width: 23%;
+  vertical-align: middle;
+}
+
+section.fixed-section div.fixed-functions span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+section.fixed-section div.fixed-functions p.btn {
+  text-align: center;
+  width: 100px;
+  font-size: 0.8rem;
+  color: white;
+  padding: 1rem 0.9rem;
+  border-radius: 8px;
+  background: linear-gradient(to top, var(--primary-color), #f0a400c2);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+section.fixed-section div.fixed-functions p.btn:active {
+  transform: scale(0.95);
+}
+
+section.fixed-section div#buyNowBtn p {
+  background: linear-gradient(to top, var(--fourth-color), #123132d3);
+  border: 1px solid var(--fourth-color);
+}
+
+/* -------------------buy-now-section--------------------------------- */
+
+section.buy-now-section {
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem 0;
+  transition: 0.5s ease-in-out;
+  background: white;
+  position: fixed;
+  z-index: 1001;
+  bottom: -100%;
+  right: 0;
+  left: 0;
+}
+
+section.buy-now-section.open {
+  bottom: 0;
+}
+
+section.buy-now-section div.container {
+  padding: 0 1.5rem;
+}
+
+section.buy-now-section div.backward {
+  text-align: right;
+}
+
+section.buy-now-section svg.icon-cross {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--sixth-color);
+  cursor: pointer;
+}
+
+section.buy-now-section svg.icon-cross:active {
+  transform: scale(0.9);
+}
+
+section.buy-now-section div.activity-info {
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+section.buy-now-section div.activity-info div.leftBox {
+  width: 50%;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.466);
+}
+
+section.buy-now-section div.activity-info div.leftBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+section.buy-now-section div.activity-info div.rightBox p.title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--sixth-color);
+  margin-bottom: 1rem;
+}
+
+section.buy-now-section div.activity-info div.rightBox p.text {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+section.buy-now-section select {
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+section.buy-now-section div.select-box {
+  width: 70%;
+  margin: 2rem auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid var(--seventh-color);
+}
+
+section.buy-now-section div.select-box p.text {
+  color: var(--sixth-color);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+section.buy-now-section div.buy-btns a {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+section.buy-now-section div.buy-btns div.btn {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.2rem 2.5rem;
+  background: linear-gradient(to top, var(--fourth-color), #123132d3);
+  border: 1px solid var(--fourth-color);
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+section.buy-now-section div.buy-btns div.put-in-cart {
+  background: linear-gradient(to top, var(--primary-color), #f0a400c2);
+  border: 1px solid var(--primary-color);
+  padding: 1.2rem 2.2rem;
+}
+
+section.buy-now-section div.sign-up-cta:active {
+  transform: scale(0.95);
+}
+
+@media only screen and (min-width: 1420px) {
+  /* ---------------------side-navbar-desktop-------------------------- */
+
+  div.side-navbar {
+    display: block;
+  }
+
+  /* --------------------Navbar-desktop------------------------- */
+
+  div.module-navbar {
+    background-color: transparent;
+    padding: 1rem 2rem;
+  }
+
+  div.module-navbar div.navbar-left {
+    width: 120px;
+    height: 50px;
+  }
+
+  div.module-navbar div.navbar-right {
+    justify-content: center;
+  }
+
+  div.module-navbar div.navbar-right div.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  div.module-navbar div.navbar-right div.cart svg.icon-cart:hover {
+    transform: rotate(-15deg);
+  }
+
+  div.module-navbar div.navbar-right span.nav-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    background-color: var(--primary-color);
+  }
+
+  div.module-navbar div.navbar-right div.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.module-navbar div.left-box {
+    width: 50px;
+    position: relative;
+  }
+
+  div.module-navbar div.left-box div.user-account {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box div.user-account:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.user-account img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user {
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: white;
+    border-radius: 50%;
+    transition: 0.35s;
+  }
+
+  div.module-navbar div.left-box svg.icon-account-user:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box.open {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box {
+    position: absolute;
+    top: 110%;
+    left: -150px;
+    width: 200px;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1.5px solid #cccccc;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li {
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    text-align: center;
+    transition: 0.5s;
+    text-align: left;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li svg {
+    width: 1.2rem;
+    margin-right: 1rem;
+    fill: var(--third-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li span {
+    display: inline-block;
+    color: var(--sixth-color);
+    vertical-align: middle;
+    transition: 0.5s;
+    font-size: 0.9rem;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li p.text {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    text-align: center;
+    width: fit-content;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.5s;
+    border: 2px solid var(--primary-color);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:not(li.logout):hover {
+    background-color: #f4f4f4;
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover > span.text {
+    transform: scale(1.1);
+  }
+
+  div.module-navbar div.left-box div.dropDown-box li:hover p.text {
+    background-color: white;
+    color: var(--primary-color);
+  }
+
+  div.module-navbar div.left-box img {
+    width: 100%;
+  }
+
+  div.module-navbar div.right-box p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  div.module-navbar div.hamburger {
+    display: none;
+  }
+
+  /* ----------------------hero-section-desktop------------------------ */
+
+  section.hero-section {
+    margin-top: -86px;
+  }
+
+  section.hero-section div.hero-section-background-image {
+    position: relative;
+    z-index: -1;
+    height: 83vh;
+    background-image: url(../images/Wallpaperkiss_1513648.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section.hero-section p.title {
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 500;
+    left: 18.5%;
+    top: 20%;
+    color: white;
+  }
+
+  section.hero-section div.hero-section-image-desktop {
+    display: block;
+    position: absolute;
+    left: 48.5%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 450px;
+  }
+
+  section.hero-section div.hero-section-image-desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  /*-------------------activity-detail-section-desktop------------------------ */
+
+  section.activity-detail-section {
+    padding-top: 9rem;
+    padding: 8rem 21.8rem 0 21.8rem;
+    background-color: #f4f4f4;
+  }
+
+  section.activity-detail-section div.flexBox0 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  section.activity-detail-section div.container {
+    padding: 0;
+  }
+
+  section.activity-detail-section div.activity-detail-section-image {
+    width: 65%;
+    height: 480px;
+    border-radius: 0.5rem;
+  }
+
+  section.activity-detail-section div.activity-detail-section-image p {
+    display: none;
+  }
+
+  section.activity-detail-section div.floor-1 {
+    display: none;
+  }
+
+  section.activity-detail-section div.flexBox1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  section.activity-detail-section div.flexBox1 div.floor-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    border-bottom: 0;
+    margin-top: 0.5rem;
+    color: var(--sixth-color);
+  }
+
+  section.activity-detail-section div.flexBox1 div.floor-2 div.floors {
+    width: 45%;
+  }
+
+  section.activity-detail-section div.flexBox1 div.floor-2 svg {
+    width: 2.5rem;
+    fill: var(--sixth-color);
+  }
+
+  section.activity-detail-section div.container div.flexBox1 div.floor-2 span {
+    font-size: 1.1rem;
+  }
+
+  /* ---------------------mountain-intro-section-desktop---------------- */
+
+  section.mountain-intro-section {
+    background-color: #f4f4f4;
+    background-image: url(../images/component-pic/activity-detail-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1900px;
+  }
+
+  section.mountain-intro-section div.container {
+    width: 100%;
+    margin: 0;
+    padding: 13rem 25rem;
+    border-bottom: 0;
+  }
+
+  section.mountain-intro-section h2.title {
+    text-align: left;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  section.mountain-intro-section h2.title,
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    p.title,
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    p.text {
+    color: white;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    p.title {
+    font-size: 1.6rem;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    p.title
+    svg.icon-play {
+    display: inline-block;
+    fill: white;
+    transform: rotate(-90deg);
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    p.text {
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+
+  section.mountain-intro-section div.mountain-intro-container {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro {
+    overflow: auto;
+    height: auto;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    li {
+    display: block;
+    flex: 0 1 48%;
+    align-self: flex-start;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    height: 370px;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    ul.mountain-intro
+    li
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  section.mountain-intro-section
+    div.mountain-intro-container
+    div.mountain-intro-cta {
+    display: none;
+  }
+
+  /* ---------------------activity-intro-section-desktop---------------------- */
+
+  section.activity-intro-section {
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 1040px;
+  }
+
+  section.activity-intro-section div.container {
+    padding: 0 25rem;
+    border-bottom: 0;
+  }
+
+  section.activity-intro-section h2.title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-size: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    color: var(--sixth-color);
+    padding-bottom: 1rem;
+  }
+
+  section.activity-intro-section h2.title span.none {
+    display: inline-block;
+  }
+
+  section.activity-intro-section div.activity-intro-image {
+    background-image: url(../images/activity-intro-image.jpg);
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  section.activity-intro-section div.activity-daily-intro {
+    align-items: flex-start;
+    margin-top: 1.5rem;
+  }
+
+  section.activity-intro-section div.activity-daily-intro div.right div.none {
+    display: block;
+  }
+
+  section.activity-intro-section div.activity-daily-intro div.left {
+    order: 1;
+    width: fit-content;
+    flex: 1 1 35%;
+    margin: 0 2rem 0 0;
+    border: 1.5px solid #b6b6b6;
+    background-color: var(--fourth-color);
+    box-shadow: -1px 0 6px rgba(0, 0, 0, 0.151);
+    height: 100%;
+    padding: 1rem;
+  }
+
+  section.activity-intro-section div.activity-daily-intro div.left p.text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  section.activity-intro-section div.activity-daily-intro div.right {
+    order: 2;
+    margin: 0;
+    width: fit-content;
+    flex: 1 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  section.activity-intro-section
+    div.activity-daily-intro
+    div.right
+    div.right-top {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-indent: 2.5rem;
+    height: 260px;
+  }
+
+  section.activity-intro-section div.activity-daily-intro div.right-bottom {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  section.activity-intro-section
+    div.activity-daily-intro
+    div.right-bottom
+    p.text {
+    background-color: #12313285;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    width: 6rem;
+    height: 6rem;
+    padding: 2.3rem 0.2rem;
+  }
+
+  /* ----------------------guide-intro-section-desktop---------------*/
+
+  section.guide-intro-section {
+    background-color: #f4f4f4;
+    padding: 0;
+    height: 980px;
+  }
+
+  section.guide-intro-section div.container {
+    border-bottom: 0;
+    padding: 4rem 25rem;
+  }
+
+  section.guide-intro-section h2.title {
+    font-size: 2.5rem;
+    font-size: 400;
+    letter-spacing: 2px;
+    width: 15%;
+    text-align: left;
+    color: var(--sixth-color);
+    padding-bottom: 1rem;
+  }
+
+  section.guide-intro-section div.guides {
+    display: none;
+  }
+
+  section.guide-intro-section div.guide-intro-cards {
+    justify-content: space-around;
+  }
+
+  section.guide-intro-section div.guide-intro-cards div.none {
+    display: block;
+  }
+
+  section.guide-intro-section div.guide-intro-cards div.card {
+    flex: 0 1 40%;
+    box-shadow: -1px 0 6px rgba(0, 0, 0, 0.301);
+  }
+
+  section.guide-intro-section
+    div.guide-intro-cards
+    div.card
+    div.guide-intro-image {
+    height: 360px;
+  }
+
+  section.guide-intro-section
+    div.guide-intro-cards
+    div.card
+    div.guide-intro-description {
+    background-color: white;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+  }
+
+  section.guide-intro-section
+    div.guide-intro-cards
+    div.card
+    div.guide-intro-description
+    p.title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  section.guide-intro-section
+    div.guide-intro-cards
+    div.card
+    div.guide-intro-description
+    p.text {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  section.guide-intro-section
+    div.guide-intro-cards
+    div.card
+    div.guide-intro-image2 {
+    background-image: url(../images/Guide-Wei.jpg);
+    height: 360px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  /* ------------------other-activity-section------------------- */
+
+  section.other-activity-section {
+    padding: 0;
+    margin-top: 4rem;
+  }
+
+  section.other-activity-section div.container {
+    padding: 4rem 25rem;
+  }
+
+  section.other-activity-section div.flexBox {
+    margin-bottom: 2rem;
+    padding-right: 1.1rem;
+  }
+
+  section.other-activity-section div.carousel-button {
+    display: flex;
+  }
+
+  section.other-activity-section div.flex div.arrow-button {
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.3rem 0.8rem;
+    margin-left: 1rem;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+
+  section.other-activity-section div.flex div.arrow-button:hover {
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+
+  section.other-activity-section div.flex div.arrow-button:active {
+    transform: scale(0.9);
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  section.other-activity-section div.flex svg {
+    display: inline-block;
+    width: 1rem;
+    margin: auto;
+  }
+
+  section.other-activity-section h2.title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-size: 400;
+    letter-spacing: 2px;
+    width: 30%;
+    text-align: left;
+    color: var(--sixth-color);
+    padding: 0 1rem;
+  }
+
+  section.other-activity-section div.carousel {
+    max-width: 1103px;
+    height: 311px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  section.other-activity-section div.carousel ul.wrap-img {
+    width: 3309px;
+    height: 311px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+  }
+
+  section.other-activity-section div.carousel li.carousel-cell {
+    display: block;
+    flex: 1 1 30%;
+    margin: 0.2rem 1rem;
+  }
+
+  section.other-activity-section li.carousel-cell div.carousel-image {
+    height: 232px;
+  }
+
+  /* ------------------comment-section-desktop------------------- */
+
+  section.comment-section {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  section.comment-section div.container {
+    padding: 4rem 25rem;
+  }
+
+  section.comment-section h2.title {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-size: 400;
+    letter-spacing: 2px;
+    width: 30%;
+    text-align: left;
+    color: var(--sixth-color);
+  }
+
+  section.comment-section div.comment-flexBox {
+    max-height: 400px;
+  }
+
+  section.comment-section div.comment-card {
+    display: block;
+    flex: 1 1 100%;
+    margin: 0 1.5rem;
+  }
+
+  section.comment-section div.comment-section-cta {
+    margin-top: 2rem;
+  }
+
+  section.comment-section div.comment-card div.bottomBox {
+    margin-left: 4.5rem;
+  }
+
+  /* ---------------------warning-section-mobile--------------------- */
+
+  section.warning-section {
+    display: none;
+  }
+
+  /* -------------------insurance-detail-section-------------------- */
+
+  section.insurance-detail-section {
+    display: none;
+  }
+
+  /* ---------------------spaceForFixed-desktop---------------------------*/
+  div.spaceForFixed-mobile {
+    display: none;
+  }
+  /* --------------------footer-section--------------------------- */
+
+  section.footer-section {
+    height: 540px;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    background-image: url(../images/component-pic/footer.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* ---------------------fixed-section-desktop---------------------- */
+
+  section.fixed-section {
+    width: 35%;
+    position: static;
+    margin-left: -5%;
+    border-radius: 0.5rem;
+  }
+
+  section.fixed-section div.homepage-container {
+    display: none;
+  }
+
+  /* -------------------buy-now-section-desktop -------------------*/
+  section.buy-now-section {
+    padding: 0.5rem;
+    width: 100%;
+    position: static;
+    border-radius: 0.5rem;
+    border: 1px solid #b6b6b6;
+  }
+
+  section.buy-now-section svg.icon-cross {
+    display: none;
+  }
+
+  section.buy-now-section div.activity-info {
+    margin-top: 0.5rem;
+  }
+
+  section.buy-now-section div.activity-info div.leftBox {
+    display: none;
+  }
+
+  section.buy-now-section div.activity-info div.rightBox {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.6rem;
+  }
+
+  section.buy-now-section div.activity-info div.rightBox p.title {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 260px;
+  }
+
+  section.buy-now-section div.activity-info div.rightBox p.text {
+    display: none;
+  }
+
+  section.buy-now-section div.activity-info div.rightBox svg.icon-heart {
+    display: block;
+    fill: white;
+    stroke: var(--sixth-color);
+    stroke-width: 2px;
+    transition: 0.1s;
+    width: 1.5rem;
+    cursor: pointer;
+  }
+
+  section.buy-now-section div.boxes div.select-box {
+    margin: 0.5rem auto;
+  }
+
+  section.buy-now-section div.notes {
+    padding-left: 3.6rem;
+    margin-top: 1rem;
+  }
+
+  section.buy-now-section div.notes div.box {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--sixth-color);
+    line-height: 1.5;
+  }
+
+  section.buy-now-section div.notes div.box u {
+    color: rgb(219, 71, 71);
+  }
+
+  section.buy-now-section div.notes div.box svg.icon-warning {
+    width: 1.5rem;
+    fill: var(--primary-color);
+  }
+
+  section.buy-now-section div.price {
+    display: block;
+    text-align: right;
+    width: 100%;
+    padding-right: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section.buy-now-section div.price p.text {
+    color: var(--sixth-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  section.buy-now-section div.buy-btns {
+    padding: 0 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  section.buy-now-section div.buy-btns div.put-in-cart {
+    display: block;
+  }
+
+  section.buy-now-section div.buy-btns div.put-in-cart:active {
+    transform: scale(0.95);
+  }
+}
